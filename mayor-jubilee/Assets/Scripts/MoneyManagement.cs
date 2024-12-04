@@ -6,11 +6,11 @@ using UnityEngine;
 public class MoneyManagement : MonoBehaviour
 {
     public TextMeshProUGUI moneyDisplayText;
-    public float currentMoney = 0;
+    public float currentMoney;
 
     public void Update()
     {
-        moneyDisplayText.text = "Money: " + currentMoney.ToString() + " $";
+        moneyDisplayText.text = "Money: " + Mathf.RoundToInt(currentMoney).ToString() + " $";
     }
 
     public void AddMoney(float amount)

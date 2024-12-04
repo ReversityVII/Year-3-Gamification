@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BuildingBehaviour : MonoBehaviour
@@ -15,7 +16,7 @@ public class BuildingBehaviour : MonoBehaviour
     public GameObject upgradeButton;
     public TextMeshProUGUI upgradeButtonText;
 
-    private int level = 1;
+    private int level = 0;
     private float flatUpgradeCost;
     private float upgradeMultiplier;
     private float flatEarningRate;
@@ -51,7 +52,7 @@ public class BuildingBehaviour : MonoBehaviour
 
         //make sure scale is correct
         gameObject.transform.localScale = Vector3.one;
-        gameObject.transform.position = Vector3.zero;
+        gameObject.transform.position = new Vector3(positionNode.transform.position.x, positionNode.transform.position.y, 0);
 
         //prefabs cant reference scene objects so referencing has to be done manually
         moneyManagement = GameObject.FindObjectOfType<MoneyManagement>();
@@ -66,7 +67,8 @@ public class BuildingBehaviour : MonoBehaviour
         moneyPerSecond = (flatEarningRate * (earningMultiplier * level));
 
         //calculate upgrade cost
-        upgradeCost = (flatUpgradeCost * (upgradeMultiplier * level));
+        upgradeCost = (flatUpgradeCost * (upgradeMultiplier * (level + 1)));
+
 
         //display
         moneyPerSecondText.text = "$/s: " + moneyPerSecond.ToString();

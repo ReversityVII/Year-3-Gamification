@@ -173,6 +173,7 @@ Transform:
   - {fileID: 2128130067}
   - {fileID: 1625557654}
   - {fileID: 894821076}
+  - {fileID: 1498299683}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &69993387
@@ -195,6 +196,13 @@ MonoBehaviour:
     earningMultiplierPerLevel: 1.2
     flatUpgradeCost: 10
     upgradeCostMultiplierPerLevel: 2
+  - name: Church
+    positionNode: {fileID: 1625557653}
+    icon: {fileID: 0}
+    flatEarningRate: 10
+    earningMultiplierPerLevel: 1.4
+    flatUpgradeCost: 300
+    upgradeCostMultiplierPerLevel: 2
   buildingPrefab: {fileID: 2425039570243342280, guid: 3c9bed5c0f25b404a8b2da582703eb5a, type: 3}
   buildingParent: {fileID: 1736099335}
 --- !u!114 &69993388
@@ -210,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyDisplayText: {fileID: 532053448}
-  currentMoney: 0
+  currentMoney: 20
 --- !u!1 &317384300
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,7 +973,7 @@ GameObject:
   m_Layer: 0
   m_Name: Building Slot 3
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -978,7 +986,7 @@ Transform:
   m_GameObject: {fileID: 894821075}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.81, y: -6.68, z: 0}
+  m_LocalPosition: {x: 1.95, y: -2.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1631,6 +1639,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140867663}
   m_CullTransparentMesh: 1
+--- !u!1 &1498299682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1498299683}
+  m_Layer: 0
+  m_Name: Building Slot 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1498299683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498299682}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.95, y: -8.13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 69993386}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1519211805
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,7 +1757,7 @@ GameObject:
   m_Layer: 0
   m_Name: Building Slot 2
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1731,7 +1770,7 @@ Transform:
   m_GameObject: {fileID: 1625557653}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.08, y: 0, z: 0}
+  m_LocalPosition: {x: 2.31, y: 1.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1961,7 +2000,7 @@ GameObject:
   m_Layer: 0
   m_Name: Building Slot 1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1974,7 +2013,7 @@ Transform:
   m_GameObject: {fileID: 2128130066}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.77, y: 0, z: 0}
+  m_LocalPosition: {x: -5.86, y: 2.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
