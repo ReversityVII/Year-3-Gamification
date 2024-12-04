@@ -10,33 +10,32 @@ public class SwitchScreen : MonoBehaviour
 
     public void EnableTownScreen()
     {
-        print("called");
-
         for (int i = 0; i < screenReferences.Length; i++) 
         {
             if (screenReferences[i].name == "TownScreen")
             {
-                print("found");
-                screenReferences[i].SetActive(true);
-            } 
+                screenReferences[i].transform.SetSiblingIndex(1);
+                print("reached");
+            }
+
             else
-                screenReferences[i].SetActive(false);
+                screenReferences[i].transform.SetSiblingIndex(0);
         }
     }
 
     public void EnableGachaScreen()
     {
-        print("called");
-
         for (int i = 0; i < screenReferences.Length; i++)
         {
             if (screenReferences[i].name == "GachaScreen")
             {
-                print("found");
-                screenReferences[i].SetActive(true);
+                screenReferences[i].transform.SetSiblingIndex(1);
+                print("reached");
             }
+                
+
             else
-                screenReferences[i].SetActive(false);
+                screenReferences[i].transform.SetSiblingIndex(0);
         }
     }
 }
