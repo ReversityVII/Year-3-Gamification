@@ -2,26 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+ * Handles creation of building prefabs.
+ * On runtime, will create all buildings provided in the list.
+ */
+
 public class BuildingManager : MonoBehaviour
 {
-
+    //ADD ALL BUILDINGS INTENDED FOR GAMEPLAY IN THE BELOW LIST
     public List<BuildingData> buildings = new List<BuildingData>();
+
+    //prefab of the building template and its parent in the scene
     public GameObject buildingPrefab;
-    public GameObject buildingParent;
+    public GameObject buildingParent; //should be the TownScreen object.
 
-    private int buildingNumber = 0; //intended order for unlocking
-
-    // Start is called before the first frame update
     void Start()
     {
+        //for each entry in the list, create an associated prefab with its data
         foreach (BuildingData data in buildings)
         {
-            CreateBuilding(data, buildingNumber);
-            buildingParent = GameObject.Find("TownScreen");
+            CreateBuilding(data);
         }
     }
 
-    void CreateBuilding(BuildingData data, int buildingNumber)
+    void CreateBuilding(BuildingData data)
     {
         //bring the gameobject into the space
         GameObject buildingObject = Instantiate(buildingPrefab);

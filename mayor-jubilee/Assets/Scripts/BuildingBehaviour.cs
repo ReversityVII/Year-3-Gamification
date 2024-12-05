@@ -4,18 +4,24 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
+/*
+ * The specific behaviour for each individual buildig - each building has a copy of this script. 
+ * handles setting of necessary starting values, and logic relating to upgrading and money production.
+ */
 public class BuildingBehaviour : MonoBehaviour
 {
 
     private BuildingData thisBuildingData;
     private MoneyManagement moneyManagement;
 
+    //for prefab gameobjects
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI moneyPerSecondText;
     public GameObject upgradeButton;
     public TextMeshProUGUI upgradeButtonText;
 
+    //other building variables needed
     private int level = 0;
     private float flatUpgradeCost;
     private float upgradeMultiplier;
@@ -26,10 +32,10 @@ public class BuildingBehaviour : MonoBehaviour
     [HideInInspector] public float moneyPerSecond;
     [HideInInspector] public float upgradeCost;
 
+    //position on the screen, assigned to a node (gameobject)
     private Transform positionNode;
 
     private float timer = 0;
-    public int buildingNumber;
 
 
     //take in the data
@@ -39,19 +45,15 @@ public class BuildingBehaviour : MonoBehaviour
         thisBuildingData = buildingData;
         nameText.text = thisBuildingData.name;
         
+        //place prefab appropriately
         positionNode = thisBuildingData.positionNode.transform;
         gameObject.transform.position = positionNode.position;
 
-
-        //for calculations
+        //reference params passed from list
         flatEarningRate = thisBuildingData.flatEarningRate;
         earningMultiplier = thisBuildingData.earningMultiplierPerLevel;
-        
         flatUpgradeCost = thisBuildingData.flatUpgradeCost;
         upgradeMultiplier = thisBuildingData.upgradeCostMultiplierPerLevel;
-
-        buildingNumber = thisBuildingData.buildingNumber;
-
 
         //make sure scale is correct
         gameObject.transform.localScale = Vector3.one;
@@ -78,9 +80,8 @@ public class BuildingBehaviour : MonoBehaviour
         upgradeButtonText.text = "Upgrade: " + upgradeCost.ToString() + "$";
 
 
-        //MONEY EARNING
+        //limit income to 1 time per second
         timer += Time.deltaTime;
-
         if(timer >= 1)
         {
             moneyManagement.AddMoney(moneyPerSecond);
@@ -88,7 +89,8 @@ public class BuildingBehaviour : MonoBehaviour
         }    
     }
 
-    public void PurchaseUpgrade() //called by button 
+    //is called by pressing the prefab's upgrade button
+    public void PurchaseUpgrade() 
     {
         //check if player has enough money
         if(upgradeCost <= moneyManagement.currentMoney) 
