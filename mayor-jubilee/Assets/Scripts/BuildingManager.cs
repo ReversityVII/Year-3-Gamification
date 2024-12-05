@@ -9,17 +9,19 @@ public class BuildingManager : MonoBehaviour
     public GameObject buildingPrefab;
     public GameObject buildingParent;
 
+    private int buildingNumber = 0; //intended order for unlocking
+
     // Start is called before the first frame update
     void Start()
     {
         foreach (BuildingData data in buildings)
         {
-            CreateBuilding(data);
+            CreateBuilding(data, buildingNumber);
             buildingParent = GameObject.Find("TownScreen");
         }
     }
 
-    void CreateBuilding(BuildingData data)
+    void CreateBuilding(BuildingData data, int buildingNumber)
     {
         //bring the gameobject into the space
         GameObject buildingObject = Instantiate(buildingPrefab);

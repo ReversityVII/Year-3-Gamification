@@ -29,6 +29,7 @@ public class BuildingBehaviour : MonoBehaviour
     private Transform positionNode;
 
     private float timer = 0;
+    public int buildingNumber;
 
 
     //take in the data
@@ -48,6 +49,8 @@ public class BuildingBehaviour : MonoBehaviour
         
         flatUpgradeCost = thisBuildingData.flatUpgradeCost;
         upgradeMultiplier = thisBuildingData.upgradeCostMultiplierPerLevel;
+
+        buildingNumber = thisBuildingData.buildingNumber;
 
 
         //make sure scale is correct

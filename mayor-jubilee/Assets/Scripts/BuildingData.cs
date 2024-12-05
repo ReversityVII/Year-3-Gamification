@@ -20,4 +20,6 @@ public class BuildingData
     public float flatUpgradeCost;
 
     public float upgradeCostMultiplierPerLevel;
+
+    public int buildingNumber;
 }
