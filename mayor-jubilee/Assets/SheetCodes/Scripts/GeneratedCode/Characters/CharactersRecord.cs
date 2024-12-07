@@ -84,6 +84,9 @@ namespace SheetCodes
 		[ColumnName("Flavour text")] [SerializeField] private string _flavourText = default;
 		public string FlavourText { get { return _flavourText; } set { if(!CheckEdit()) return; _flavourText = value; }}
 
+		[ColumnName("UsedSprite")] [SerializeField] private int _usedsprite = default;
+		public int Usedsprite { get { return _usedsprite; } set { if(!CheckEdit()) return; _usedsprite = value; }}
+
         protected bool runtimeEditingEnabled { get { return originalRecord != null; } }
         public CharactersModel model { get { return ModelManager.CharactersModel; } }
         private CharactersRecord originalRecord = default;
@@ -130,6 +133,7 @@ namespace SheetCodes
             record._percentageearningboost = _percentageearningboost;
             record._buildingSlotAffected = _buildingSlotAffected;
             record._flavourText = _flavourText;
+            record._usedsprite = _usedsprite;
         }
 
         private bool CheckEdit()

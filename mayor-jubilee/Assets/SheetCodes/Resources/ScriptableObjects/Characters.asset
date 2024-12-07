@@ -24,6 +24,7 @@ MonoBehaviour:
     _buildingSlotAffected: 1
     _flavourText: 'CHARACTER 1:  This is a basic character, with a small improvement
       to the first building.'
+    _usedsprite: 0
   - identifier: 2
     _name: Uncommon Character 1
     _icon: {fileID: 0}
@@ -35,6 +36,7 @@ MonoBehaviour:
     _buildingSlotAffected: 1
     _flavourText: 'CHARACTER 2: This is a slightly less common character, with a
       stronger impact on the first building.'
+    _usedsprite: 1
   - identifier: 3
     _name: Rare Character 1
     _icon: {fileID: 0}
@@ -46,6 +48,7 @@ MonoBehaviour:
     _buildingSlotAffected: 2
     _flavourText: 'CHARACTER 3: This is a decently rare character, with a strong
       impact on the second building. '
+    _usedsprite: 2
   - identifier: 4
     _name: Legendary Character 1
     _icon: {fileID: 0}
@@ -57,3 +60,4 @@ MonoBehaviour:
     _buildingSlotAffected: 2
     _flavourText: 'CHARACTER 4: This is a very rare character, with a huge impact
       on the second building.'
+    _usedsprite: 3

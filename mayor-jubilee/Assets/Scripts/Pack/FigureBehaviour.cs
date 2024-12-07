@@ -21,6 +21,9 @@ public class FigureBehaviour : MonoBehaviour
     //character data inherited from UnlockPack when Initialize is called
     CharactersIdentifier character;
 
+    //script to change the sprite for the character as appropriate
+    CharacterSpriteChoice characterSpriteChoice;
+
     //called by UnlockPack, handles displaying the character that was earned in the pack
     public void Initialize(CharactersIdentifier temp, float packCost)
     {
@@ -54,6 +57,11 @@ public class FigureBehaviour : MonoBehaviour
         //find and update text
         flavourText = (TextMeshProUGUI) gameObject.GetComponentInChildren(typeof(TextMeshProUGUI));
         flavourText.text = character.GetRecord(false).FlavourText;
+
+        //call script to update character sprite to preference
+        int spriteChoice = character.GetRecord(false).Usedsprite;
+        characterSpriteChoice = gameObject.GetComponent<CharacterSpriteChoice>();
+        characterSpriteChoice.ImageInitialization(spriteChoice);
 
     }
 }
