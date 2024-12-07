@@ -7,6 +7,8 @@ namespace SheetCodes
 		[Identifier("None")] None = 0,
 		[Identifier("TestCharacter")] Testcharacter = 1,
 		[Identifier("test guy 2 ")] TestGuy2 = 2,
+		[Identifier("test char 3")] TestChar3 = 3,
+		[Identifier("test character 4")] TestCharacter4 = 4,
 	}
 
 	public static class CharactersIdentifierExtension
