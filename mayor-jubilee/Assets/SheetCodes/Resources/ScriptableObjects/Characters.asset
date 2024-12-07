@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   records:
   - identifier: 1
-    _name: common char
+    _name: Common Character 1
     _icon: {fileID: 0}
     _sprite: {fileID: 0}
     _unlockchance: 100
@@ -25,7 +25,7 @@ MonoBehaviour:
     _flavourText: 'CHARACTER 1:  This is a basic character, with a small improvement
       to the first building.'
   - identifier: 2
-    _name: uncommon char
+    _name: Uncommon Character 1
     _icon: {fileID: 0}
     _sprite: {fileID: 0}
     _unlockchance: 50
@@ -36,7 +36,7 @@ MonoBehaviour:
     _flavourText: 'CHARACTER 2: This is a slightly less common character, with a
       stronger impact on the first building.'
   - identifier: 3
-    _name: rare char
+    _name: Rare Character 1
     _icon: {fileID: 0}
     _sprite: {fileID: 0}
     _unlockchance: 20
@@ -47,7 +47,7 @@ MonoBehaviour:
     _flavourText: 'CHARACTER 3: This is a decently rare character, with a strong
       impact on the second building. '
   - identifier: 4
-    _name: legendary char
+    _name: Legendary Character 1
     _icon: {fileID: 0}
     _sprite: {fileID: 0}
     _unlockchance: 10

@@ -1,21 +1,27 @@
 using SheetCodes;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
+
+/*
+ * Handles instantiating and intializing a character (or figure, the terminology is interchangeable) when the player buys a pack.
+ * puts the character where they need to go, and reimburses the player if they already have this character. 
+ */
 
 public class FigureBehaviour : MonoBehaviour
 {
+    //player-facing display logic
     private GameObject positionNode; 
     private MoneyManagement moneyManagement;
     private TextMeshProUGUI flavourText;
 
+    //building and script for the building that gets affected by the character
     private GameObject affectedBuildingSlot;
     private BuildingBehaviour affectedBuilding;
 
+    //character data inherited from UnlockPack when Initialize is called
     CharactersIdentifier character;
 
+    //called by UnlockPack, handles displaying the character that was earned in the pack
     public void Initialize(CharactersIdentifier temp, float packCost)
     {
         character = temp;
