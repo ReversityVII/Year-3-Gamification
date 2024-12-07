@@ -81,6 +81,9 @@ namespace SheetCodes
 		[ColumnName("Building Slot Affected")] [SerializeField] private int _buildingSlotAffected = default;
 		public int BuildingSlotAffected { get { return _buildingSlotAffected; } set { if(!CheckEdit()) return; _buildingSlotAffected = value; }}
 
+		[ColumnName("Flavour text")] [SerializeField] private string _flavourText = default;
+		public string FlavourText { get { return _flavourText; } set { if(!CheckEdit()) return; _flavourText = value; }}
+
         protected bool runtimeEditingEnabled { get { return originalRecord != null; } }
         public CharactersModel model { get { return ModelManager.CharactersModel; } }
         private CharactersRecord originalRecord = default;
@@ -126,6 +129,7 @@ namespace SheetCodes
             record._nodenumber = _nodenumber;
             record._percentageearningboost = _percentageearningboost;
             record._buildingSlotAffected = _buildingSlotAffected;
+            record._flavourText = _flavourText;
         }
 
         private bool CheckEdit()

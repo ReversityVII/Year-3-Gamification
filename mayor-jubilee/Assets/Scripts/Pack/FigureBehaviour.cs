@@ -1,6 +1,7 @@
 using SheetCodes;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 
@@ -8,6 +9,7 @@ public class FigureBehaviour : MonoBehaviour
 {
     private GameObject positionNode; 
     private MoneyManagement moneyManagement;
+    private TextMeshProUGUI flavourText;
 
     private GameObject affectedBuildingSlot;
     private BuildingBehaviour affectedBuilding;
@@ -34,8 +36,6 @@ public class FigureBehaviour : MonoBehaviour
             Destroy(this.gameObject);
             }
 
-        print(character.GetRecord(false).Rarity);
-
         gameObject.name = character.GetRecord(false).Name;
 
         //reference the building that this figure influences
@@ -44,6 +44,10 @@ public class FigureBehaviour : MonoBehaviour
 
         //influence the building money production
         affectedBuilding.buildingInfluence += character.GetRecord(false).Percentageearningboost;
+
+        //find and update text
+        flavourText = (TextMeshProUGUI) gameObject.GetComponentInChildren(typeof(TextMeshProUGUI));
+        flavourText.text = character.GetRecord(false).FlavourText;
 
     }
 }
