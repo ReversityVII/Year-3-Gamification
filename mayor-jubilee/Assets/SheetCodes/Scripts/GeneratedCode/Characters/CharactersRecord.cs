@@ -72,6 +72,15 @@ namespace SheetCodes
 		public Enumerators.characterRarity Rarity { get { return _rarity; } set { if(!CheckEdit()) return; _rarity = value; }}
 		//..To here
 
+		[ColumnName("NodeNumber")] [SerializeField] private int _nodenumber = default;
+		public int Nodenumber { get { return _nodenumber; } set { if(!CheckEdit()) return; _nodenumber = value; }}
+
+		[ColumnName("PercentageEarningBoost")] [SerializeField] private float _percentageearningboost = default;
+		public float Percentageearningboost { get { return _percentageearningboost; } set { if(!CheckEdit()) return; _percentageearningboost = value; }}
+
+		[ColumnName("Building Slot Affected")] [SerializeField] private int _buildingSlotAffected = default;
+		public int BuildingSlotAffected { get { return _buildingSlotAffected; } set { if(!CheckEdit()) return; _buildingSlotAffected = value; }}
+
         protected bool runtimeEditingEnabled { get { return originalRecord != null; } }
         public CharactersModel model { get { return ModelManager.CharactersModel; } }
         private CharactersRecord originalRecord = default;
@@ -114,6 +123,9 @@ namespace SheetCodes
             record._sprite = _sprite;
             record._unlockchance = _unlockchance;
             record._rarity = _rarity;
+            record._nodenumber = _nodenumber;
+            record._percentageearningboost = _percentageearningboost;
+            record._buildingSlotAffected = _buildingSlotAffected;
         }
 
         private bool CheckEdit()

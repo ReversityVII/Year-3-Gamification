@@ -10,7 +10,6 @@ using UnityEngine;
  */
 public class BuildingBehaviour : MonoBehaviour
 {
-
     private BuildingData thisBuildingData;
     private MoneyManagement moneyManagement;
 
@@ -31,6 +30,7 @@ public class BuildingBehaviour : MonoBehaviour
     //calculations as displayed in update
     [HideInInspector] public float moneyPerSecond;
     [HideInInspector] public float upgradeCost;
+    [HideInInspector] public float buildingInfluence;
 
     //position on the screen, assigned to a node (gameobject)
     private Transform positionNode;
@@ -47,7 +47,8 @@ public class BuildingBehaviour : MonoBehaviour
         
         //place prefab appropriately
         positionNode = thisBuildingData.positionNode.transform;
-        gameObject.transform.position = positionNode.position;
+        //gameObject.transform.position = positionNode.position;
+        gameObject.transform.SetParent(positionNode.transform, true);
 
         //reference params passed from list
         flatEarningRate = thisBuildingData.flatEarningRate;
@@ -70,6 +71,7 @@ public class BuildingBehaviour : MonoBehaviour
 
         //calculate money per second
         moneyPerSecond = (flatEarningRate * (earningMultiplier * level));
+        moneyPerSecond = moneyPerSecond * (1 + buildingInfluence/100);
 
         //calculate upgrade cost
         upgradeCost = (flatUpgradeCost * (upgradeMultiplier * (level + 1)));

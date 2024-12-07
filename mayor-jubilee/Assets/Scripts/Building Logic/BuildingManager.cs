@@ -30,7 +30,7 @@ public class BuildingManager : MonoBehaviour
     {
         //bring the gameobject into the space
         GameObject buildingObject = Instantiate(buildingPrefab);
-        buildingObject.transform.SetParent(buildingParent.transform);
+        //buildingObject.transform.SetParent(buildingParent.transform);
 
         //set data as needed within the prefab's script
         BuildingBehaviour building = buildingObject.GetComponent<BuildingBehaviour>();

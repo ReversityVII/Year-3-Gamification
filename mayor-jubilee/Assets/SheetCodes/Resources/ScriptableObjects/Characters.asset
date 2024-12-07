@@ -14,14 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   records:
   - identifier: 1
-    _name: Idk test guy #1
+    _name: common char
     _icon: {fileID: 0}
     _sprite: {fileID: 0}
-    _unlockchance: 99
+    _unlockchance: 100
     _rarity: 0
+    _nodenumber: 1
+    _percentageearningboost: 15
+    _buildingSlotAffected: 1
   - identifier: 2
-    _name: test guy 2 lol
+    _name: uncommon char
     _icon: {fileID: 0}
     _sprite: {fileID: 0}
-    _unlockchance: 0.0000001
+    _unlockchance: 50
+    _rarity: 1
+    _nodenumber: 2
+    _percentageearningboost: 25
+    _buildingSlotAffected: 1
+  - identifier: 3
+    _name: rare char
+    _icon: {fileID: 0}
+    _sprite: {fileID: 0}
+    _unlockchance: 20
+    _rarity: 2
+    _nodenumber: 3
+    _percentageearningboost: 20
+    _buildingSlotAffected: 2
+  - identifier: 4
+    _name: legendary char
+    _icon: {fileID: 0}
+    _sprite: {fileID: 0}
+    _unlockchance: 10
     _rarity: 3
+    _nodenumber: 4
+    _percentageearningboost: 35
+    _buildingSlotAffected: 2
