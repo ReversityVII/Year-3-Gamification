@@ -219,7 +219,7 @@ MonoBehaviour:
   - name: School
     positionNode: {fileID: 2128130066}
     icon: {fileID: 0}
-    flatEarningRate: 200
+    flatEarningRate: 8
     earningMultiplierPerLevel: 1.2
     flatUpgradeCost: 10
     upgradeCostMultiplierPerLevel: 2
@@ -230,8 +230,16 @@ MonoBehaviour:
     flatEarningRate: 20
     earningMultiplierPerLevel: 1.4
     flatUpgradeCost: 150
-    upgradeCostMultiplierPerLevel: 2
+    upgradeCostMultiplierPerLevel: 1.6
     buildingNumber: 2
+  - name: Insurance Company
+    positionNode: {fileID: 894821075}
+    icon: {fileID: 0}
+    flatEarningRate: 30
+    earningMultiplierPerLevel: 1.4
+    flatUpgradeCost: 300
+    upgradeCostMultiplierPerLevel: 1.8
+    buildingNumber: 3
   buildingPrefab: {fileID: 2425039570243342280, guid: 3c9bed5c0f25b404a8b2da582703eb5a, type: 3}
   buildingParent: {fileID: 1736099335}
 --- !u!114 &69993388
@@ -279,6 +287,18 @@ PrefabInstance:
     - target: {fileID: 5077526866469393301, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PackMoneyCheck
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162992350316661666, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.1756
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162992350316661666, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.1756
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162992350316661666, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.1756
       objectReference: {fileID: 0}
     - target: {fileID: 6162992350316661666, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
       propertyPath: m_LocalPosition.x
@@ -338,7 +358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8827658146332541666, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
       propertyPath: m_text
-      value: Gacha Pack 1
+      value: BASIC PACK
       objectReference: {fileID: 0}
     - target: {fileID: 8827658146332541666, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
       propertyPath: m_fontSize
@@ -643,7 +663,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
+  m_UpdateRectTransformForStandalone: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -734,8 +754,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: 12.35}
+  m_SizeDelta: {x: 100, y: 138.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &452681416
 MonoBehaviour:
@@ -1562,7 +1582,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 60.55961
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1763,8 +1783,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: 1.48}
+  m_SizeDelta: {x: 100, y: 130.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1077096831
 MonoBehaviour:
@@ -2114,7 +2134,7 @@ Transform:
   m_GameObject: {fileID: 1560665823}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 427.1, y: -210, z: -15.699107}
+  m_LocalPosition: {x: 450.5, y: -210, z: -15.699107}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
