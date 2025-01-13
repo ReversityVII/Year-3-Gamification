@@ -14,10 +14,11 @@ public class CharacterSpriteChoice : MonoBehaviour
     public RawImage spriteImage; 
 
     //choose an image to represent the character
-    public void ImageInitialization(int imageChoice)
+    public Texture ImageInitialization(int imageChoice)
     {
         //set an image for the sprite
         spriteImage = GetComponent<RawImage>();
         spriteImage.texture = possibleSprites[imageChoice];
+        return possibleSprites[imageChoice];
     }
 }

@@ -14,6 +14,8 @@ public class FigureBehaviour : MonoBehaviour
     private MoneyManagement moneyManagement;
     private TextMeshProUGUI flavourText;
 
+    [SerializeField] private GameObject overlayScreen;
+
     //building and script for the building that gets affected by the character
     private GameObject affectedBuildingSlot;
     private BuildingBehaviour affectedBuilding;
@@ -63,7 +65,10 @@ public class FigureBehaviour : MonoBehaviour
         //call script to update character sprite to preference
         int spriteChoice = character.GetRecord(false).Usedsprite;
         characterSpriteChoice = gameObject.GetComponent<CharacterSpriteChoice>();
-        characterSpriteChoice.ImageInitialization(spriteChoice);
+        Texture charImage = characterSpriteChoice.ImageInitialization(spriteChoice);
 
+        //instantiate overlay prefab
+        GameObject overlay = GameObject.Instantiate(overlayScreen, Vector3.zero, Quaternion.identity);
+        overlay.GetComponentInChildren<CollectedOverlayScript>().SetImage(charImage);
     }
 }
