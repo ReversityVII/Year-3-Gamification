@@ -60,7 +60,8 @@ public class FigureBehaviour : MonoBehaviour
 
         //find and update text
         flavourText = (TextMeshProUGUI) gameObject.GetComponentInChildren(typeof(TextMeshProUGUI));
-        flavourText.text = character.GetRecord(false).FlavourText;
+        string grabbedFlavourText = character.GetRecord(false).FlavourText;
+        flavourText.text = grabbedFlavourText;
 
         //call script to update character sprite to preference
         int spriteChoice = character.GetRecord(false).Usedsprite;
@@ -69,6 +70,6 @@ public class FigureBehaviour : MonoBehaviour
 
         //instantiate overlay prefab
         GameObject overlay = GameObject.Instantiate(overlayScreen, Vector3.zero, Quaternion.identity);
-        overlay.GetComponentInChildren<CollectedOverlayScript>().SetImage(charImage);
+        overlay.GetComponent<CollectedOverlayScript>().SetImage(charImage, grabbedFlavourText);
     }
 }

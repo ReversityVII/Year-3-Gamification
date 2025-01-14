@@ -16,7 +16,7 @@ public class CharacterSpriteChoice : MonoBehaviour
     //choose an image to represent the character
     public Texture ImageInitialization(int imageChoice)
     {
-        //set an image for the sprite
+        //set an image for the sprite in child
         spriteImage = GetComponent<RawImage>();
         spriteImage.texture = possibleSprites[imageChoice];
         return possibleSprites[imageChoice];

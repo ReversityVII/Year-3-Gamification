@@ -3,12 +3,29 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CollectedOverlayScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public void SetImage(Texture texture)
+    [SerializeField]
+    public TextMeshProUGUI flavourText;
+    public Canvas canvas;
+
+
+    void Start()
     {
-        this.GetComponent<RawImage>().texture = texture;
+
+    }
+
+    // Start is called before the first frame update
+    public void SetImage(Texture texture, string FlavourText)
+    {
+        this.GetComponentInChildren<RawImage>().texture = texture;
+        flavourText.text = FlavourText;
+    }
+
+    public void ExitScreen()
+    {
+        Destroy(this.gameObject);
     }
 }
