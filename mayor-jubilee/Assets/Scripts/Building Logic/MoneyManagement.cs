@@ -11,11 +11,12 @@ public class MoneyManagement : MonoBehaviour
 {
     public TextMeshProUGUI moneyDisplayText;
     public float currentMoney;
+    public float currentGachaMoney = 0;
 
     public void Update()
     {
         //update current amount of money held
-        moneyDisplayText.text = "Money: " + Mathf.RoundToInt(currentMoney).ToString() + " $";
+        moneyDisplayText.text = "Money: " + Mathf.RoundToInt(currentMoney).ToString() + " $" + "\nStarCrystals: " + Mathf.RoundToInt(currentGachaMoney).ToString();
     }
 
     //called by other classes to add money
@@ -28,5 +29,19 @@ public class MoneyManagement : MonoBehaviour
     public void RemoveMoney(float amount)
     {
       currentMoney -= amount;
+    }
+
+    public void RemoveGachaMoney(float amount)
+    {
+        currentGachaMoney -= amount;
+    }
+
+    public void ConvertCurrency(float moneyAmount)
+    {
+        if (moneyAmount < currentMoney)
+        {
+            currentGachaMoney += moneyAmount / 10;
+            RemoveMoney(moneyAmount);
+        }
     }
 }

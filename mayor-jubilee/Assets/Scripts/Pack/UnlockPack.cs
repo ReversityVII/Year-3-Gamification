@@ -38,15 +38,15 @@ public class UnlockPack : MonoBehaviour
         //reference money script and update initial cost
         moneyManagement = GameObject.FindObjectOfType<MoneyManagement>();
         currentCost = baseCost;
-        packText.text = ("Pack Name #1 \n cost: $" + currentCost); //method of declaring will need to change when we get more than one pack
+        packText.text = ("Pack Name #1 \n cost: SC$" + currentCost); //method of declaring will need to change when we get more than one pack
     }
 
     public void PackMoneyCheck()
     {
         //does the player have enough money to purchase the pack?
-        if(moneyManagement.currentMoney >= currentCost)
+        if(moneyManagement.currentGachaMoney >= currentCost)
         {
-            moneyManagement.RemoveMoney(currentCost);
+            moneyManagement.RemoveGachaMoney(currentCost);
 
             //go ahead and unlock it
             UnlockPackage();
@@ -89,7 +89,7 @@ public class UnlockPack : MonoBehaviour
         figureBehaviour.Initialize(chosenChar, currentCost);
 
         //revaluate current cost
-        currentCost = currentCost * multiplierPerPurchase;
-        packText.text = ("BASIC PACK \n cost: $" + currentCost); //method of declaring will need to change when we get more than one pack
+        currentCost = Mathf.RoundToInt(currentCost * multiplierPerPurchase);
+        packText.text = ("BASIC PACK \n cost: SC$" + currentCost); //method of declaring will need to change when we get more than one pack
     }
 }
