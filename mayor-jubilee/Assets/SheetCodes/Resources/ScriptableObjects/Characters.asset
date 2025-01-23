@@ -15,49 +15,58 @@ MonoBehaviour:
   records:
   - identifier: 1
     _name: Common Character 1
-    _icon: {fileID: 0}
-    _sprite: {fileID: 0}
-    _unlockchance: 100
+    _icon: {fileID: 2800000, guid: dde934ac73607494f8013424e0027c55, type: 3}
+    _sprite: {fileID: 2800000, guid: dde934ac73607494f8013424e0027c55, type: 3}
+    _unlockChance: 100
     _rarity: 0
-    _nodenumber: 1
-    _percentageearningboost: 15
+    _nodeNumber: 1
+    _percentageEarningBoost: 15
     _buildingSlotAffected: 1
     _flavourText: 'CHARACTER 1:  This is a basic character, with a small improvement
       to the first building.'
     _usedsprite: 0
+    _packs:
+    - BasicPack
   - identifier: 2
     _name: Uncommon Character 1
     _icon: {fileID: 0}
-    _sprite: {fileID: 0}
-    _unlockchance: 50
+    _sprite: {fileID: 2800000, guid: 6fceca9bbad47a440b9e454d0c9119f0, type: 3}
+    _unlockChance: 50
     _rarity: 1
-    _nodenumber: 2
-    _percentageearningboost: 25
+    _nodeNumber: 2
+    _percentageEarningBoost: 25
     _buildingSlotAffected: 1
     _flavourText: 'CHARACTER 2: This is a slightly less common character, with a
       stronger impact on the first building.'
     _usedsprite: 1
+    _packs:
+    - BasicPack
   - identifier: 3
     _name: Rare Character 1
     _icon: {fileID: 0}
-    _sprite: {fileID: 0}
-    _unlockchance: 20
+    _sprite: {fileID: 2800000, guid: 33cb56fa2d30a3340b96ce50de38298b, type: 3}
+    _unlockChance: 20
     _rarity: 2
-    _nodenumber: 3
-    _percentageearningboost: 20
+    _nodeNumber: 3
+    _percentageEarningBoost: 20
     _buildingSlotAffected: 2
     _flavourText: 'CHARACTER 3: This is a decently rare character, with a strong
       impact on the second building. '
     _usedsprite: 2
+    _packs:
+    - BasicPack
   - identifier: 4
     _name: Legendary Character 1
     _icon: {fileID: 0}
-    _sprite: {fileID: 0}
-    _unlockchance: 10
+    _sprite: {fileID: 2800000, guid: b05f33661f3c10a4796b7e477bf69e89, type: 3}
+    _unlockChance: 10
     _rarity: 3
-    _nodenumber: 4
-    _percentageearningboost: 35
+    _nodeNumber: 4
+    _percentageEarningBoost: 35
     _buildingSlotAffected: 2
     _flavourText: 'CHARACTER 4: This is a very rare character, with a huge impact
       on the second building.'
     _usedsprite: 3
+    _packs:
+    - BasicPack
+    - LegendPack

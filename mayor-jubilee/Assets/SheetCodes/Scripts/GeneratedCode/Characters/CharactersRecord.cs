@@ -64,19 +64,19 @@ namespace SheetCodes
         }
 		//..To here
 
-		[ColumnName("UnlockChance")] [SerializeField] private float _unlockchance = default;
-		public float Unlockchance { get { return _unlockchance; } set { if(!CheckEdit()) return; _unlockchance = value; }}
+		[ColumnName("UnlockChance")] [SerializeField] private float _unlockChance = default;
+		public float UnlockChance { get { return _unlockChance; } set { if(!CheckEdit()) return; _unlockChance = value; }}
 
 		//Does this type no longer exist? Delete from here..
 		[ColumnName("Rarity")] [SerializeField] private Enumerators.characterRarity _rarity = default;
 		public Enumerators.characterRarity Rarity { get { return _rarity; } set { if(!CheckEdit()) return; _rarity = value; }}
 		//..To here
 
-		[ColumnName("NodeNumber")] [SerializeField] private int _nodenumber = default;
-		public int Nodenumber { get { return _nodenumber; } set { if(!CheckEdit()) return; _nodenumber = value; }}
+		[ColumnName("NodeNumber")] [SerializeField] private int _nodeNumber = default;
+		public int NodeNumber { get { return _nodeNumber; } set { if(!CheckEdit()) return; _nodeNumber = value; }}
 
-		[ColumnName("PercentageEarningBoost")] [SerializeField] private float _percentageearningboost = default;
-		public float Percentageearningboost { get { return _percentageearningboost; } set { if(!CheckEdit()) return; _percentageearningboost = value; }}
+		[ColumnName("PercentageEarningBoost")] [SerializeField] private float _percentageEarningBoost = default;
+		public float PercentageEarningBoost { get { return _percentageEarningBoost; } set { if(!CheckEdit()) return; _percentageEarningBoost = value; }}
 
 		[ColumnName("Building Slot Affected")] [SerializeField] private int _buildingSlotAffected = default;
 		public int BuildingSlotAffected { get { return _buildingSlotAffected; } set { if(!CheckEdit()) return; _buildingSlotAffected = value; }}
@@ -86,6 +86,9 @@ namespace SheetCodes
 
 		[ColumnName("UsedSprite")] [SerializeField] private int _usedsprite = default;
 		public int Usedsprite { get { return _usedsprite; } set { if(!CheckEdit()) return; _usedsprite = value; }}
+
+		[ColumnName("Packs")] [SerializeField] private string[] _packs = default;
+		public string[] Packs { get { return _packs; } set { if(!CheckEdit()) return; _packs = value; }}
 
         protected bool runtimeEditingEnabled { get { return originalRecord != null; } }
         public CharactersModel model { get { return ModelManager.CharactersModel; } }
@@ -127,13 +130,14 @@ namespace SheetCodes
             record._name = _name;
             record._icon = _icon;
             record._sprite = _sprite;
-            record._unlockchance = _unlockchance;
+            record._unlockChance = _unlockChance;
             record._rarity = _rarity;
-            record._nodenumber = _nodenumber;
-            record._percentageearningboost = _percentageearningboost;
+            record._nodeNumber = _nodeNumber;
+            record._percentageEarningBoost = _percentageEarningBoost;
             record._buildingSlotAffected = _buildingSlotAffected;
             record._flavourText = _flavourText;
             record._usedsprite = _usedsprite;
+            record._packs = _packs;
         }
 
         private bool CheckEdit()

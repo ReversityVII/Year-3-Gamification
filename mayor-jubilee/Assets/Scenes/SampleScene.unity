@@ -346,9 +346,17 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6834526642419240576, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
+      propertyPath: packName
+      value: BasicPack
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834526642419240576, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
       propertyPath: packText
       value: 
       objectReference: {fileID: 1086923170}
+    - target: {fileID: 6834526642419240576, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
+      propertyPath: characters.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6834526642419240576, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
       propertyPath: multiplierPerPurchase
       value: 1.2

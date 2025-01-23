@@ -21,23 +21,24 @@ public class FigureBehaviour : MonoBehaviour
     private BuildingBehaviour affectedBuilding;
 
     //character data inherited from UnlockPack when Initialize is called
-    CharactersIdentifier character;
+    //CharactersIdentifier character;
+    CharacterData character;
 
     //script to change the sprite for the character as appropriate
     CharacterSpriteChoice characterSpriteChoice;
 
     //called by UnlockPack, handles displaying the character that was earned in the pack
-    public void Initialize(CharactersIdentifier temp, float packCost)
+    public void Initialize(CharacterData temp, float packCost)
     {
         character = temp;
 
         //find its listed position node according to the sheet
-        positionNode = GameObject.Find("Character Slot " + character.GetRecord(false).Nodenumber);
+        positionNode = GameObject.Find("Character Slot " + character.NodeNumber);
         gameObject.transform.position = positionNode.transform.position;
         gameObject.transform.SetParent(positionNode.transform, true);
 
         //check if this figure already exists
-        if(GameObject.Find(character.GetRecord(false).Name))
+        if(GameObject.Find(character.Name))
             {
             //if so, add money instead and then delete the object
             //moneyManagement = GameObject.FindObjectOfType<MoneyManagement>();
@@ -47,7 +48,7 @@ public class FigureBehaviour : MonoBehaviour
             Destroy(this.gameObject);
             }
 
-        gameObject.name = character.GetRecord(false).Name;
+        gameObject.name = character.Name;
 
         //INFLUENCE BUILDING
         //reference the building that this figure influences
@@ -60,13 +61,14 @@ public class FigureBehaviour : MonoBehaviour
 
         //find and update text
         flavourText = (TextMeshProUGUI) gameObject.GetComponentInChildren(typeof(TextMeshProUGUI));
-        string grabbedFlavourText = character.GetRecord(false).FlavourText;
+        string grabbedFlavourText = character.FlavourText;
         flavourText.text = grabbedFlavourText;
 
         //call script to update character sprite to preference
-        int spriteChoice = character.GetRecord(false).Usedsprite;
+        //int spriteChoice = character.Usedsprite;
         characterSpriteChoice = gameObject.GetComponent<CharacterSpriteChoice>();
-        Texture charImage = characterSpriteChoice.ImageInitialization(spriteChoice);
+        Texture charImage = character.SpriteTexture;
+        characterSpriteChoice.SetTexture(character.SpriteTexture);
 
         //instantiate overlay prefab
         GameObject overlay = GameObject.Instantiate(overlayScreen, Vector3.zero, Quaternion.identity);
