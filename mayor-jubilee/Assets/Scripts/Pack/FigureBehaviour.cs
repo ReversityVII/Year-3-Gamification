@@ -1,6 +1,8 @@
 using SheetCodes;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 /*
  * Handles instantiating and intializing a character (or figure, the terminology is interchangeable) when the player buys a pack.
@@ -69,6 +71,7 @@ public class FigureBehaviour : MonoBehaviour
         characterSpriteChoice = gameObject.GetComponent<CharacterSpriteChoice>();
         Texture charImage = character.SpriteTexture;
         characterSpriteChoice.SetTexture(character.SpriteTexture);
+
 
         //instantiate overlay prefab
         GameObject overlay = GameObject.Instantiate(overlayScreen, Vector3.zero, Quaternion.identity);

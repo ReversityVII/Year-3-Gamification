@@ -85,11 +85,11 @@ public class UnlockPack : MonoBehaviour
                 //this character is currently what it should earn
                 chosenChar = characters[j];
                 currentLowestRarity = characters[j].UnlockChance;
-                Debug.Log(currentLowestRarity);
+                //Debug.Log(currentLowestRarity);
             }
         }
 
-        //prefab intantiation and initialization
+        //prefab instantiation and initialization
         GameObject figure = Instantiate(figurePrefab);
         FigureBehaviour figureBehaviour = figure.GetComponent<FigureBehaviour>();
         figureBehaviour.Initialize(chosenChar, currentCost);
