@@ -21,6 +21,7 @@ public class HoverFlavorText : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        print("firing");
         flavourText.enabled = true;
         backgroundImage.enabled = true;
     }

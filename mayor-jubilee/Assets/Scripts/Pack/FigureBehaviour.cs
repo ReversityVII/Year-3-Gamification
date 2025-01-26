@@ -45,8 +45,6 @@ public class FigureBehaviour : MonoBehaviour
             //if so, add money instead and then delete the object
             //moneyManagement = GameObject.FindObjectOfType<MoneyManagement>();
             //moneyManagement.AddMoney(packCost / 5); //reimburse 20 percent of what it cost
-
-            print("Already exists, destroying!");
             Destroy(this.gameObject);
             }
 
