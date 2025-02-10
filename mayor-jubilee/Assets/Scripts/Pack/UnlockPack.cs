@@ -135,6 +135,7 @@ public class UnlockPack : MonoBehaviour
                 newChar.PercentageEarningBoost = ModelManager.CharactersModel.GetRecord(Indexes[i]).PercentageEarningBoost;
                 newChar.BuildingSlotAffected = ModelManager.CharactersModel.GetRecord(Indexes[i]).BuildingSlotAffected;
                 newChar.FlavourText = ModelManager.CharactersModel.GetRecord(Indexes[i]).FlavourText;
+                newChar.isHorizontal = ModelManager.CharactersModel.GetRecord(Indexes[i]).IsHorizontal;
                 characters.Add(newChar);
             }
         }

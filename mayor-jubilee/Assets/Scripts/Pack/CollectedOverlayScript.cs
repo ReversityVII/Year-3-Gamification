@@ -8,9 +8,11 @@ using TMPro;
 public class CollectedOverlayScript : MonoBehaviour
 {
     [SerializeField]
+    public GameObject image;
     public TextMeshProUGUI flavourText;
     public Canvas canvas;
-
+    public float XSize;
+    public float YSize;
 
     void Start()
     {
@@ -18,10 +20,19 @@ public class CollectedOverlayScript : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    public void SetImage(Texture texture, string FlavourText)
+    public void SetImage(CharacterData temp)
     {
-        this.GetComponentInChildren<RawImage>().texture = texture;
-        flavourText.text = FlavourText;
+        CharacterData character = temp;
+        image.GetComponent<RawImage>().texture = character.SpriteTexture;
+        flavourText.text = character.FlavourText;
+
+        if(character.isHorizontal)
+        {
+            image.GetComponent<RectTransform>().sizeDelta = new Vector2(XSize, YSize);
+        } else
+        {
+            image.GetComponent<RectTransform>().sizeDelta = new Vector2(YSize, XSize);
+        }
     }
 
     public void ExitScreen()

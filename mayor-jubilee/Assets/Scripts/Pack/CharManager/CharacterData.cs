@@ -26,4 +26,5 @@ public class CharacterData
 
     public string FlavourText;
 
+    public bool isHorizontal;
 }
