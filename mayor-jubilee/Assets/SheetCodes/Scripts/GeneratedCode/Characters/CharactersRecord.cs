@@ -90,6 +90,9 @@ namespace SheetCodes
 		[ColumnName("Packs")] [SerializeField] private string[] _packs = default;
 		public string[] Packs { get { return _packs; } set { if(!CheckEdit()) return; _packs = value; }}
 
+		[ColumnName("Is Horizontal")] [SerializeField] private bool _isHorizontal = default;
+		public bool IsHorizontal { get { return _isHorizontal; } set { if(!CheckEdit()) return; _isHorizontal = value; }}
+
         protected bool runtimeEditingEnabled { get { return originalRecord != null; } }
         public CharactersModel model { get { return ModelManager.CharactersModel; } }
         private CharactersRecord originalRecord = default;
@@ -138,6 +141,7 @@ namespace SheetCodes
             record._flavourText = _flavourText;
             record._usedsprite = _usedsprite;
             record._packs = _packs;
+            record._isHorizontal = _isHorizontal;
         }
 
         private bool CheckEdit()
