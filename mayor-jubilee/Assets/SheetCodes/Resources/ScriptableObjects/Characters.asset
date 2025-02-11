@@ -64,7 +64,7 @@ MonoBehaviour:
     _sprite: {fileID: 2800000, guid: b3e2b7466797cea4e935917e8b520ee5, type: 3}
     _unlockChance: 2
     _rarity: 3
-    _nodeNumber: 0
+    _nodeNumber: 5
     _percentageEarningBoost: 0
     _buildingSlotAffected: 0
     _flavourText: 
