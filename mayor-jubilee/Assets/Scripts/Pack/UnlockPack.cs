@@ -44,7 +44,7 @@ public class UnlockPack : MonoBehaviour
         //reference money script and update initial cost
         moneyManagement = GameObject.FindObjectOfType<MoneyManagement>();
         currentCost = baseCost;
-        packText.text = ("Pack Name #1 \n cost: SC$" + currentCost); //method of declaring will need to change when we get more than one pack
+        packText.text = ("STARLIGHT PACK \n cost: " + currentCost + "SC"); //method of declaring will need to change when we get more than one pack
 
         GetRelevantCharacters();
 
@@ -93,7 +93,7 @@ public class UnlockPack : MonoBehaviour
 
         //revaluate current cost
         currentCost = Mathf.RoundToInt(currentCost * multiplierPerPurchase);
-        packText.text = ("BASIC PACK \n cost: SC$" + currentCost); //method of declaring will need to change when we get more than one pack
+        packText.text = ("STARLIGHT PACK \n cost: " + currentCost + "SC"); //method of declaring will need to change when we get more than one pack
     }
 
     public void GetRelevantCharacters()
