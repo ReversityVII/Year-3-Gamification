@@ -262,7 +262,7 @@ MonoBehaviour:
   - name: School
     positionNode: {fileID: 2128130066}
     icon: {fileID: 0}
-    flatEarningRate: 100000
+    flatEarningRate: 2
     earningMultiplierPerLevel: 1.2
     flatUpgradeCost: 10
     upgradeCostMultiplierPerLevel: 2
@@ -270,18 +270,18 @@ MonoBehaviour:
   - name: Church
     positionNode: {fileID: 1625557653}
     icon: {fileID: 0}
-    flatEarningRate: 20
+    flatEarningRate: 10
     earningMultiplierPerLevel: 1.4
     flatUpgradeCost: 150
-    upgradeCostMultiplierPerLevel: 1.6
+    upgradeCostMultiplierPerLevel: 2
     buildingNumber: 2
   - name: Insurance Company
     positionNode: {fileID: 894821075}
     icon: {fileID: 0}
-    flatEarningRate: 30
+    flatEarningRate: 25
     earningMultiplierPerLevel: 1.4
     flatUpgradeCost: 300
-    upgradeCostMultiplierPerLevel: 1.8
+    upgradeCostMultiplierPerLevel: 2
     buildingNumber: 3
   buildingPrefab: {fileID: 2425039570243342280, guid: 3c9bed5c0f25b404a8b2da582703eb5a, type: 3}
   buildingParent: {fileID: 1736099335}

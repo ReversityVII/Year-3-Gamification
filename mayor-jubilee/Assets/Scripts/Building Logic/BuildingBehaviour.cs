@@ -71,7 +71,7 @@ public class BuildingBehaviour : MonoBehaviour
 
         //calculate money per second
         moneyPerSecond = (flatEarningRate * (earningMultiplier * level));
-        moneyPerSecond = moneyPerSecond * (1 + buildingInfluence/100);
+        //moneyPerSecond = moneyPerSecond * (1 + buildingInfluence/100);
 
         //calculate upgrade cost
         upgradeCost = (flatUpgradeCost * (upgradeMultiplier * (level + 1))); //scales linearly. move to purchaseUpgrade and fix equation to make it work properly. (upgradeCost = upgradeCost * upgradeMultiplier)
