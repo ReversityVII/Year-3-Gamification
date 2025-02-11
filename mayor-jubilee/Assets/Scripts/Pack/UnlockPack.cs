@@ -65,29 +65,24 @@ public class UnlockPack : MonoBehaviour
 
     public void UnlockPackage()
     {
+        //creates new local list of character chances
+        List<CharacterData> characterChances = new List<CharacterData>();
 
-        float currentLowestRarity = 100; //the lowest rarity that the random number is below
-        rarityArray = new float[characters.Count];
+        //goes through all characters and adds them to the list the number of times their rarity chance says
         for (int i = 0; i < characters.Count; i++)
         {
-            rarityArray[i] = characters[i].UnlockChance;
-        }
-
-        //generate random number
-        float rand = UnityEngine.Random.Range(1, 100);
-
-        //compare the random number with the indexed rarities, finds the smallest number that it is still smaller than.
-        for(int j = 0; j < rarityArray.Length; j++)  
-        {
-            //if the random number is less than the rarity AND less than the lowest it has found so far
-            if(rand <= (rarityArray[j]) && rand < currentLowestRarity)
+            //adds to list based on unlock chance; higher is more likely to be chosen
+            for (int j = 0; j < characters[i].UnlockChance; j++)
             {
-                //this character is currently what it should earn
-                chosenChar = characters[j];
-                currentLowestRarity = characters[j].UnlockChance;
-                //Debug.Log(currentLowestRarity);
+                characterChances.Add(characters[i]);
             }
         }
+
+        //picks an random number between 0 and the length of the list
+        int rand = UnityEngine.Random.Range(0, characterChances.Count);
+
+        //selects the character from the list based on random value
+        chosenChar = characterChances[rand];
 
         //prefab instantiation and initialization
         GameObject figure = Instantiate(figurePrefab);
