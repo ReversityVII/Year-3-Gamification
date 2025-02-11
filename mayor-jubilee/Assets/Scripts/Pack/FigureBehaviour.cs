@@ -77,11 +77,11 @@ public class FigureBehaviour : MonoBehaviour
         if(character.isHorizontal)
         {
             imageTransform.sizeDelta = new Vector2(XSize, YSize);
-            flavourText.GetComponent<RectTransform>().anchoredPosition = new Vector2 (0f, -2.723f);
+            flavourText.GetComponent<RectTransform>().anchoredPosition = new Vector2 (0f, -5.492f);
         } else
         {
             imageTransform.sizeDelta = new Vector2(YSize, XSize);
-            flavourText.GetComponent<RectTransform>().anchoredPosition = new Vector2(0f, -4.101013f);
+            flavourText.GetComponent<RectTransform>().anchoredPosition = new Vector2(0f, -6.76f);
         }
 
         //instantiate overlay prefab

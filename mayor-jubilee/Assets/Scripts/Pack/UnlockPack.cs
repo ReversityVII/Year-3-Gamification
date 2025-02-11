@@ -93,6 +93,8 @@ public class UnlockPack : MonoBehaviour
         GameObject figure = Instantiate(figurePrefab);
         FigureBehaviour figureBehaviour = figure.GetComponent<FigureBehaviour>();
         figureBehaviour.Initialize(chosenChar, currentCost);
+        HoverFlavorText hoverTextScript = figure.GetComponentInChildren<HoverFlavorText>();
+        hoverTextScript.Initialize(chosenChar);
 
         //revaluate current cost
         currentCost = Mathf.RoundToInt(currentCost * multiplierPerPurchase);
