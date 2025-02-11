@@ -64,8 +64,8 @@ namespace SheetCodes
         }
 		//..To here
 
-		[ColumnName("UnlockChance")] [SerializeField] private float _unlockChance = default;
-		public float UnlockChance { get { return _unlockChance; } set { if(!CheckEdit()) return; _unlockChance = value; }}
+		[ColumnName("UnlockChance")] [SerializeField] private int _unlockChance = default;
+		public int UnlockChance { get { return _unlockChance; } set { if(!CheckEdit()) return; _unlockChance = value; }}
 
 		//Does this type no longer exist? Delete from here..
 		[ColumnName("Rarity")] [SerializeField] private Enumerators.characterRarity _rarity = default;
