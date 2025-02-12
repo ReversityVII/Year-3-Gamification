@@ -271,16 +271,16 @@ MonoBehaviour:
     positionNode: {fileID: 1625557653}
     icon: {fileID: 0}
     flatEarningRate: 10
-    earningMultiplierPerLevel: 1.4
+    earningMultiplierPerLevel: 1.3
     flatUpgradeCost: 150
-    upgradeCostMultiplierPerLevel: 2
+    upgradeCostMultiplierPerLevel: 1.3
     buildingNumber: 2
   - name: Insurance Company
     positionNode: {fileID: 894821075}
     icon: {fileID: 0}
-    flatEarningRate: 25
+    flatEarningRate: 40
     earningMultiplierPerLevel: 1.4
-    flatUpgradeCost: 300
+    flatUpgradeCost: 800
     upgradeCostMultiplierPerLevel: 2
     buildingNumber: 3
   buildingPrefab: {fileID: 2425039570243342280, guid: 3c9bed5c0f25b404a8b2da582703eb5a, type: 3}

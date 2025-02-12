@@ -22,8 +22,7 @@ MonoBehaviour:
     _nodeNumber: 1
     _percentageEarningBoost: 15
     _buildingSlotAffected: 1
-    _flavourText: 'CHARACTER 1:  This is a basic character, with a small improvement
-      to the first building.'
+    _flavourText: 'CHARACTER 1:  COMET'
     _usedsprite: 0
     _packs:
     - BasicPack
@@ -37,8 +36,7 @@ MonoBehaviour:
     _nodeNumber: 2
     _percentageEarningBoost: 25
     _buildingSlotAffected: 1
-    _flavourText: 'CHARACTER 2: This is a slightly less common character, with a
-      stronger impact on the first building.'
+    _flavourText: 'CHARACTER 2: EARTH'
     _usedsprite: 1
     _packs:
     - BasicPack
@@ -52,8 +50,7 @@ MonoBehaviour:
     _nodeNumber: 3
     _percentageEarningBoost: 20
     _buildingSlotAffected: 2
-    _flavourText: 'CHARACTER 3: This is a decently rare character, with a strong
-      impact on the second building. '
+    _flavourText: 'CHARACTER 3: MOON'
     _usedsprite: 2
     _packs:
     - BasicPack
@@ -67,7 +64,7 @@ MonoBehaviour:
     _nodeNumber: 5
     _percentageEarningBoost: 0
     _buildingSlotAffected: 0
-    _flavourText: 
+    _flavourText: 'CHARACTER 5: BLACK HOLE'
     _usedsprite: 0
     _packs:
     - BasicPack
@@ -81,8 +78,7 @@ MonoBehaviour:
     _nodeNumber: 4
     _percentageEarningBoost: 35
     _buildingSlotAffected: 2
-    _flavourText: 'CHARACTER 4: This is a very rare character, with a huge impact
-      on the second building.'
+    _flavourText: 'CHARACTER 4: SUN'
     _usedsprite: 3
     _packs:
     - BasicPack
