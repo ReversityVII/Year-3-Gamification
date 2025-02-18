@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   records:
   - identifier: 1
-    _name: Common Character 1
+    _name: Uncommon Character 1
     _icon: {fileID: 0}
     _sprite: {fileID: 2800000, guid: 7fdcd2efbb46a114eacce5428f1d88f5, type: 3}
     _unlockChance: 10
@@ -22,13 +22,18 @@ MonoBehaviour:
     _nodeNumber: 1
     _percentageEarningBoost: 15
     _buildingSlotAffected: 1
-    _flavourText: 'CHARACTER 1:  COMET'
+    _flavourText: "How does one get from one side of the universe to the other? Well,
+      as Jett, the comet ambassador of the Star Girls would say, it\u2019s as easy
+      as hanging on for the ride! She zips across space and time with ease, collecting
+      new friends and little trinkets along the way. She is the messenger of the
+      Star Girls, and keeps them interconnected with the rest of the universe. And
+      she\u2019s excited to show you the wonders she\u2019s seen before!"
     _usedsprite: 0
     _packs:
     - BasicPack
     _isHorizontal: 1
   - identifier: 2
-    _name: Uncommon Character 1
+    _name: Uncommon Character 2
     _icon: {fileID: 0}
     _sprite: {fileID: 2800000, guid: 9ddf0a99da7095e43b6622aeb121e828, type: 3}
     _unlockChance: 5
@@ -36,7 +41,13 @@ MonoBehaviour:
     _nodeNumber: 2
     _percentageEarningBoost: 25
     _buildingSlotAffected: 1
-    _flavourText: 'CHARACTER 2: EARTH'
+    _flavourText: Brute strength is her speciality, none can best her. Terra, the
+      planet ambassador of the Star Girls spends her days shaping the land beneath
+      her fingertips. She brings new life and adventure to long lost solar systems,
+      paving the way for the other Star Girls to bring their joy and talents to new
+      reaches of the universe. Each and every Star Girl watches her masterful skills
+      with excitement and trepidation, wondering what fantastical thing she will
+      make next. And Earth is her newest project!
     _usedsprite: 1
     _packs:
     - BasicPack
@@ -50,7 +61,13 @@ MonoBehaviour:
     _nodeNumber: 3
     _percentageEarningBoost: 20
     _buildingSlotAffected: 2
-    _flavourText: 'CHARACTER 3: MOON'
+    _flavourText: "Soft spoken and solemn, Nyx, the moon ambassador of the Star Girls
+      uses her gentle nature to bring peace and tranquility to the universe. With
+      all the energy and excitement the other Star Girls exude, sometimes rest is
+      needed! She cloaks the worlds around her in a soothing darkness and offers
+      a calming (yet cold) embrace. Sometimes, even the other Star Girls come to
+      her in order to relax and take a load off. Just be sure to bring a blanket\u2026
+      preferably a warm one."
     _usedsprite: 2
     _packs:
     - BasicPack
@@ -64,7 +81,14 @@ MonoBehaviour:
     _nodeNumber: 5
     _percentageEarningBoost: 0
     _buildingSlotAffected: 0
-    _flavourText: 'CHARACTER 5: BLACK HOLE'
+    _flavourText: The antithesis of all Star Girls, her gaze is sharp and her touch
+      deadly. Eterna, the black hole ambassador of the Star Girls is often called
+      cruel or cold, but none debate her importance. All the worlds and wonders the
+      other Star Girls create require matter, and who better to recycle the matter
+      of the world than the one being who can rip apart anything and everything with
+      a simple touch?. Legends say that at one point she was the sun ambassador.
+      Yet, she grew power hungry and eager to control more and more until a great
+      explosion left her fundamentally different.
     _usedsprite: 0
     _packs:
     - BasicPack
@@ -78,9 +102,85 @@ MonoBehaviour:
     _nodeNumber: 4
     _percentageEarningBoost: 35
     _buildingSlotAffected: 2
-    _flavourText: 'CHARACTER 4: SUN'
+    _flavourText: "The shining heart of the Star Girls! Solaris, the sun ambassador
+      of the Star Girls is a warm and inviting light in a vast, dark universe. She
+      offers invigorating heat to all who enter her radius, and brings life to the
+      worlds the Star Girls create. She guides them all forward with a heart that
+      rings true and a smile that can make even the cold, dreaded exterior of Eterna
+      crumble away. Just don\u2019t get too close, her warmth is best enjoyed from
+      a distance."
     _usedsprite: 3
     _packs:
     - BasicPack
     - LegendPack
+    _isHorizontal: 0
+  - identifier: 6
+    _name: Common Character 1
+    _icon: {fileID: 0}
+    _sprite: {fileID: 2800000, guid: dde934ac73607494f8013424e0027c55, type: 3}
+    _unlockChance: 100
+    _rarity: 0
+    _nodeNumber: -1
+    _percentageEarningBoost: 0
+    _buildingSlotAffected: 0
+    _flavourText: WOW SO COOL
+    _usedsprite: 0
+    _packs:
+    - BasicPack
+    _isHorizontal: 0
+  - identifier: 7
+    _name: Common Character 2
+    _icon: {fileID: 0}
+    _sprite: {fileID: 2800000, guid: 6fceca9bbad47a440b9e454d0c9119f0, type: 3}
+    _unlockChance: 80
+    _rarity: 0
+    _nodeNumber: -1
+    _percentageEarningBoost: 0
+    _buildingSlotAffected: 0
+    _flavourText: WOW SO COOL
+    _usedsprite: 0
+    _packs:
+    - BasicPack
+    _isHorizontal: 0
+  - identifier: 8
+    _name: Common Character 3
+    _icon: {fileID: 0}
+    _sprite: {fileID: 2800000, guid: 33cb56fa2d30a3340b96ce50de38298b, type: 3}
+    _unlockChance: 60
+    _rarity: 0
+    _nodeNumber: -1
+    _percentageEarningBoost: 0
+    _buildingSlotAffected: 0
+    _flavourText: WOW SO COOL
+    _usedsprite: 0
+    _packs:
+    - BasicPack
+    _isHorizontal: 0
+  - identifier: 9
+    _name: Common Character 4
+    _icon: {fileID: 0}
+    _sprite: {fileID: 2800000, guid: b05f33661f3c10a4796b7e477bf69e89, type: 3}
+    _unlockChance: 40
+    _rarity: 0
+    _nodeNumber: -1
+    _percentageEarningBoost: 0
+    _buildingSlotAffected: 0
+    _flavourText: WOW SO COOL
+    _usedsprite: 0
+    _packs:
+    - BasicPack
+    _isHorizontal: 0
+  - identifier: 10
+    _name: Common Character 5
+    _icon: {fileID: 0}
+    _sprite: {fileID: 2800000, guid: dffef66376be4fa480fb02b19edbe903, type: 3}
+    _unlockChance: 20
+    _rarity: 0
+    _nodeNumber: -1
+    _percentageEarningBoost: 0
+    _buildingSlotAffected: 0
+    _flavourText: WOW SO COOL
+    _usedsprite: 0
+    _packs:
+    - BasicPack
     _isHorizontal: 0
