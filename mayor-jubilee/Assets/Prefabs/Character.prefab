@@ -218,7 +218,7 @@ RectTransform:
   m_GameObject: {fileID: 1562446534780263175}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2652538, y: 2.2652538, z: 2.2652538}
+  m_LocalScale: {x: 4, y: 4, z: 2.2652538}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8247926224325045142}
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_fontSizeBase: 0.2
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 0.1
+  m_fontSizeMin: 0.05
   m_fontSizeMax: 0.2
   m_fontStyle: 0
   m_HorizontalAlignment: 2
