@@ -45,7 +45,7 @@ public class UnlockPack : MonoBehaviour
         //reference money script and update initial cost
         moneyManagement = GameObject.FindObjectOfType<MoneyManagement>();
         currentCost = baseCost;
-        packText.text = (packName +  "\n cost: " + currentCost + "SC");
+        packText.text = (packName +  "\n\n Costs " + currentCost + "<sprite index=0>");
 
         GetRelevantCharacters();
     }
@@ -92,7 +92,7 @@ public class UnlockPack : MonoBehaviour
 
         //revaluate current cost
         currentCost += costIncreasePerPurchase;
-        packText.text = (packName + "\n cost: " + currentCost + "SC"); 
+        packText.text = (packName + "\n cost: " + currentCost + "<sprite index=0>"); 
     }
 
     public void GetRelevantCharacters()

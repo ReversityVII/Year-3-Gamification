@@ -12,12 +12,13 @@ public class MoneyManagement : MonoBehaviour
     public TextMeshProUGUI moneyDisplayText;
     public float currentMoney;
     public float currentGachaMoney = 0;
+    public Sprite starCrystalSprite;
     [HideInInspector] public float moneySpent;
 
     public void Update()
     {
         //update current amount of money held
-        moneyDisplayText.text = "Money: " + Mathf.RoundToInt(currentMoney).ToString() + " $" + "\nStarCrystals: " + Mathf.RoundToInt(currentGachaMoney).ToString();
+        moneyDisplayText.text = "Money: " + Mathf.RoundToInt(currentMoney).ToString() + "\n\n <sprite index=0>: " + Mathf.RoundToInt(currentGachaMoney).ToString();
     }
 
     //called by other classes to add money

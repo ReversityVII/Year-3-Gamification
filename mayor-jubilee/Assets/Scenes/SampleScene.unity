@@ -312,6 +312,7 @@ MonoBehaviour:
   moneyDisplayText: {fileID: 532053448}
   currentMoney: 20
   currentGachaMoney: 0
+  starCrystalSprite: {fileID: 21300000, guid: 58aae8301c8884c479c232b6c3d9d677, type: 3}
   moneySpent: 0
 --- !u!1 &86780160
 GameObject:
@@ -559,7 +560,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6834526642419240576, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
       propertyPath: costIncreasePerPurchase
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8425889371208447472, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
       propertyPath: m_Name
@@ -593,6 +594,14 @@ PrefabInstance:
       propertyPath: m_fontStyle
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8827658146332541666, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
+      propertyPath: m_StyleSheet
+      value: 
+      objectReference: {fileID: 11400000, guid: f952c082cb03451daed3ee968ac6c63e, type: 2}
+    - target: {fileID: 8827658146332541666, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
+      propertyPath: m_spriteAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dd7d819a7a670484380fd10aeb35e993, type: 2}
     - target: {fileID: 8827658146332541666, guid: b69861f9eca95fc4cba0f87597e9e605, type: 3}
       propertyPath: m_fontSizeBase
       value: 20
@@ -639,7 +648,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -281, y: -139}
+  m_AnchoredPosition: {x: -281, y: -144}
   m_SizeDelta: {x: 160, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &192644841
@@ -981,7 +990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 125, y: 38.130013}
+  m_AnchoredPosition: {x: 125, y: -13}
   m_SizeDelta: {x: 77.20001, y: 578.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &317384302
@@ -1499,9 +1508,9 @@ MonoBehaviour:
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
+  m_spriteAsset: {fileID: 11400000, guid: dd7d819a7a670484380fd10aeb35e993, type: 2}
   m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
+  m_StyleSheet: {fileID: 11400000, guid: f952c082cb03451daed3ee968ac6c63e, type: 2}
   m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
@@ -2185,7 +2194,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -190.84003, y: 38.13}
+  m_AnchoredPosition: {x: -190.84003, y: -13}
   m_SizeDelta: {x: 77.20001, y: 578.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &954332754
@@ -2682,7 +2691,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 327, y: -139}
+  m_AnchoredPosition: {x: 327, y: -144.00003}
   m_SizeDelta: {x: 160, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1121319032
@@ -3586,7 +3595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5, y: -139}
+  m_AnchoredPosition: {x: 5, y: -144.00003}
   m_SizeDelta: {x: 160, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1905691650

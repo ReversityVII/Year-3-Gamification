@@ -112,7 +112,7 @@ public class BuildingBehaviour : MonoBehaviour
             if (specialBuildingTimer > fundTime * 60) //time is up, reset
             {
                 upgradeCost = 100 + (moneyManagement.moneySpent / 7); //on every new 5 minutes, the building will cost 1/7th of their total money spent (+ base cost), adjust if needed
-                upgradeButtonText.text = "FUND REQUIREMENT: " + upgradeCost.ToString() + "$";
+                upgradeButtonText.text = "FUND: " + upgradeCost.ToString() + "$";
                 levelText.text = "Nonprofit";
                 specialBuildingTimer = 0;
             }
