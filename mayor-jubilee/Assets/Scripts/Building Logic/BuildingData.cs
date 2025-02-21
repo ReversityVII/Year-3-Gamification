@@ -26,4 +26,6 @@ public class BuildingData
     public float upgradeCostMultiplierPerLevel;
 
     public int buildingNumber;
+
+    public bool isSpecialBuilding;
 }

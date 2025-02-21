@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 /*
- * The specific behaviour for each individual buildig - each building has a copy of this script. 
+ * The specific behaviour for each individual building - each building has a copy of this script. 
  * handles setting of necessary starting values, and logic relating to upgrading and money production.
  */
 public class BuildingBehaviour : MonoBehaviour
@@ -26,6 +26,7 @@ public class BuildingBehaviour : MonoBehaviour
     private float upgradeMultiplier;
     private float flatEarningRate;
     private float earningMultiplier;
+    private bool isSpecialBuilding;
 
     //calculations as displayed in update
     [HideInInspector] public float moneyPerSecond;
@@ -36,6 +37,8 @@ public class BuildingBehaviour : MonoBehaviour
     private Transform positionNode;
 
     private float timer = 0;
+    private float specialBuildingTimer = 99999; //very high value to force a reset at the start no matter what
+    private bool fundingMet = false;
 
 
     //take in the data
@@ -55,6 +58,7 @@ public class BuildingBehaviour : MonoBehaviour
         earningMultiplier = thisBuildingData.earningMultiplierPerLevel;
         flatUpgradeCost = thisBuildingData.flatUpgradeCost;
         upgradeMultiplier = thisBuildingData.upgradeCostMultiplierPerLevel;
+        isSpecialBuilding = thisBuildingData.isSpecialBuilding;
 
         //make sure scale is correct
         gameObject.transform.localScale = Vector3.one;
@@ -66,41 +70,75 @@ public class BuildingBehaviour : MonoBehaviour
 
     public void Update()
     {
-        //display level
-        levelText.text = "Level: " + level.ToString();
-
-        //calculate money per second
-        moneyPerSecond = (flatEarningRate * (earningMultiplier * level));
-        //moneyPerSecond = moneyPerSecond * (1 + buildingInfluence/100);
-
-        //calculate upgrade cost
-        upgradeCost = (flatUpgradeCost * (upgradeMultiplier * (level + 1))); //scales linearly. move to purchaseUpgrade and fix equation to make it work properly. (upgradeCost = upgradeCost * upgradeMultiplier)
-
-
-        //display
-        moneyPerSecondText.text = "$/s: " + moneyPerSecond.ToString();
-        upgradeButtonText.text = "Upgrade: " + upgradeCost.ToString() + "$";
-
-
-        //limit income to 1 time per second
-        timer += Time.deltaTime;
-        if(timer >= 1)
+        //only do this code if the building is a regular one. for the special building, ignore this procedure.
+        if (!isSpecialBuilding)
         {
-            moneyManagement.AddMoney(moneyPerSecond);
-            timer = 0;
-        }    
+            //display level
+            levelText.text = "Level: " + level.ToString();
+
+            //calculate money per second
+            moneyPerSecond = (flatEarningRate * (earningMultiplier * level));
+            //moneyPerSecond = moneyPerSecond * (1 + buildingInfluence/100);
+
+            //calculate upgrade cost
+            upgradeCost = (flatUpgradeCost * (upgradeMultiplier * (level + 1))); //scales linearly. move to purchaseUpgrade and fix equation to make it work properly. (upgradeCost = upgradeCost * upgradeMultiplier)
+
+
+            //display
+            moneyPerSecondText.text = "$/s: " + moneyPerSecond.ToString();
+            upgradeButtonText.text = "Upgrade: " + upgradeCost.ToString() + "$";
+
+
+            //limit income to 1 time per second
+            timer += Time.deltaTime;
+            if (timer >= 1)
+            {
+                moneyManagement.AddMoney(moneyPerSecond);
+                timer = 0;
+            }
+        }
+        else
+        {
+            float fundTime = 5; //minutes the player has for each funding goal
+            specialBuildingTimer += Time.deltaTime;
+            moneyPerSecondText.text = "Time: \n" + Mathf.RoundToInt(((fundTime) - specialBuildingTimer / 60)) + " minutes"; //display time remaining in minutes 
+            
+            if(((fundTime * 60) - specialBuildingTimer) < 60) //less than 60 seconds remain
+            {
+                moneyPerSecondText.text = "Time: \nLess than a minute";
+            }
+
+
+            if (specialBuildingTimer > fundTime * 60) //time is up, reset
+            {
+                upgradeCost = 100 + (moneyManagement.moneySpent / 7); //on every new 5 minutes, the building will cost 1/7th of their total money spent (+ base cost), adjust if needed
+                upgradeButtonText.text = "FUND REQUIREMENT: " + upgradeCost.ToString() + "$";
+                levelText.text = "Nonprofit";
+                specialBuildingTimer = 0;
+            }
+        }
     }
 
     //is called by pressing the prefab's upgrade button
     public void PurchaseUpgrade() 
     {
-        //check if player has enough money
-        if(upgradeCost <= moneyManagement.currentMoney) 
+        if (!isSpecialBuilding)
         {
-            level++;
-            moneyManagement.RemoveMoney(upgradeCost);
+            //check if player has enough money
+            if (upgradeCost <= moneyManagement.currentMoney)
+            {
+                level++;
+                moneyManagement.RemoveMoney(upgradeCost);
+            }
+        }
+        else
+        {
+            if (upgradeCost <= moneyManagement.currentMoney & fundingMet == false)
+            {
+                fundingMet = true; 
+                moneyManagement.RemoveMoney(upgradeCost);
+                upgradeButtonText.text = "Funded! Thank you!";
+            }
         }
     }
-
-
 }

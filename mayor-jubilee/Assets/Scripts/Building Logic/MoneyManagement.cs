@@ -12,6 +12,7 @@ public class MoneyManagement : MonoBehaviour
     public TextMeshProUGUI moneyDisplayText;
     public float currentMoney;
     public float currentGachaMoney = 0;
+    [HideInInspector] public float moneySpent;
 
     public void Update()
     {
@@ -28,7 +29,8 @@ public class MoneyManagement : MonoBehaviour
     //called by other classes to remove money
     public void RemoveMoney(float amount)
     {
-      currentMoney -= amount;
+        currentMoney -= amount;
+        moneySpent += amount;
     }
 
     public void RemoveGachaMoney(float amount)
