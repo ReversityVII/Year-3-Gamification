@@ -30,7 +30,7 @@ MonoBehaviour:
       she\u2019s excited to show you the wonders she\u2019s seen before!"
     _usedsprite: 0
     _packs:
-    - BasicPack
+    - Celestial Pack
     _isHorizontal: 1
   - identifier: 2
     _name: Uncommon Character 2
@@ -50,7 +50,7 @@ MonoBehaviour:
       make next. And Earth is her newest project!
     _usedsprite: 1
     _packs:
-    - BasicPack
+    - Celestial Pack
     _isHorizontal: 0
   - identifier: 3
     _name: Rare Character 1
@@ -70,7 +70,7 @@ MonoBehaviour:
       preferably a warm one."
     _usedsprite: 2
     _packs:
-    - BasicPack
+    - Celestial Pack
     _isHorizontal: 1
   - identifier: 5
     _name: Epic Character 1
@@ -91,7 +91,7 @@ MonoBehaviour:
       explosion left her fundamentally different.
     _usedsprite: 0
     _packs:
-    - BasicPack
+    - Celestial Pack
     _isHorizontal: 1
   - identifier: 4
     _name: Legendary Character 1
@@ -111,7 +111,7 @@ MonoBehaviour:
       a distance."
     _usedsprite: 3
     _packs:
-    - BasicPack
+    - Celestial Pack
     - LegendPack
     _isHorizontal: 0
   - identifier: 6
@@ -126,7 +126,7 @@ MonoBehaviour:
     _flavourText: WOW SO COOL
     _usedsprite: 0
     _packs:
-    - BasicPack
+    - Celestial Pack
     _isHorizontal: 0
   - identifier: 7
     _name: Common Character 2
@@ -140,7 +140,7 @@ MonoBehaviour:
     _flavourText: WOW SO COOL
     _usedsprite: 0
     _packs:
-    - BasicPack
+    - Celestial Pack
     _isHorizontal: 0
   - identifier: 8
     _name: Common Character 3
@@ -154,7 +154,7 @@ MonoBehaviour:
     _flavourText: WOW SO COOL
     _usedsprite: 0
     _packs:
-    - BasicPack
+    - Celestial Pack
     _isHorizontal: 0
   - identifier: 9
     _name: Common Character 4
@@ -168,7 +168,7 @@ MonoBehaviour:
     _flavourText: WOW SO COOL
     _usedsprite: 0
     _packs:
-    - BasicPack
+    - Celestial Pack
     _isHorizontal: 0
   - identifier: 10
     _name: Common Character 5
@@ -182,5 +182,5 @@ MonoBehaviour:
     _flavourText: WOW SO COOL
     _usedsprite: 0
     _packs:
-    - BasicPack
+    - Celestial Pack
     _isHorizontal: 0

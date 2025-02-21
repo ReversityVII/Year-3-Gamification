@@ -17,7 +17,8 @@ public class UnlockPack : MonoBehaviour
 {
 
     private List<CharacterData> characters = new List<CharacterData>();
-    public string packName;
+    [Tooltip("MUST BE EXACTLY THE SAME NAME AND CASE AS ITS REFERENCE IN THE SHEET")]  public string packName;
+    
 
     //display pack details to player
     public TextMeshProUGUI unlockButton;
@@ -26,7 +27,7 @@ public class UnlockPack : MonoBehaviour
 
     //cost logic for buying packs
     public float baseCost;
-    public float multiplierPerPurchase;
+    public float costIncreasePerPurchase;
     private float currentCost;
 
     //array for evaluating rarities and choosing a character that fits.
@@ -44,11 +45,9 @@ public class UnlockPack : MonoBehaviour
         //reference money script and update initial cost
         moneyManagement = GameObject.FindObjectOfType<MoneyManagement>();
         currentCost = baseCost;
-        packText.text = ("STARLIGHT PACK \n cost: " + currentCost + "SC"); //method of declaring will need to change when we get more than one pack
+        packText.text = (packName +  "\n cost: " + currentCost + "SC");
 
         GetRelevantCharacters();
-
-
     }
 
     public void PackMoneyCheck()
@@ -92,8 +91,8 @@ public class UnlockPack : MonoBehaviour
         hoverTextScript.Initialize(chosenChar);
 
         //revaluate current cost
-        currentCost = Mathf.RoundToInt(currentCost * multiplierPerPurchase);
-        packText.text = ("STARLIGHT PACK \n cost: " + currentCost + "SC"); //method of declaring will need to change when we get more than one pack
+        currentCost += costIncreasePerPurchase;
+        packText.text = (packName + "\n cost: " + currentCost + "SC"); 
     }
 
     public void GetRelevantCharacters()
