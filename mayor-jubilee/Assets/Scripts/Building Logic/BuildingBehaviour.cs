@@ -115,6 +115,11 @@ public class BuildingBehaviour : MonoBehaviour
                 upgradeButtonText.text = "FUND: " + upgradeCost.ToString() + "$";
                 levelText.text = "Nonprofit";
                 specialBuildingTimer = 0;
+
+                if(fundingMet == true)
+                {
+                    fundingMet = false;
+                }
             }
         }
     }

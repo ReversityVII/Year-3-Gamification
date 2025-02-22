@@ -92,7 +92,7 @@ public class UnlockPack : MonoBehaviour
 
         //revaluate current cost
         currentCost += costIncreasePerPurchase;
-        packText.text = (packName + "\n cost: " + currentCost + "<sprite index=0>"); 
+        packText.text = (packName + "\n\n Costs " + currentCost + "<sprite index=0>"); 
     }
 
     public void GetRelevantCharacters()

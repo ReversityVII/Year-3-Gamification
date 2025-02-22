@@ -218,7 +218,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7077369541231238156}
   - component: {fileID: 3746220640921782328}
-  - component: {fileID: 8331276772209615129}
   m_Layer: 5
   m_Name: BuildingPrefab
   m_TagString: Untagged
@@ -270,23 +269,6 @@ MonoBehaviour:
   moneyPerSecond: 0
   upgradeCost: 0
   buildingInfluence: 0
---- !u!114 &8331276772209615129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2425039570243342280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3297b596f8d2f7448012fa7559661d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 5061366641296488794}
-  levelText: {fileID: 8203591051453628472}
-  moneyPerSecondText: {fileID: 7886700530433506858}
-  upgradeButton: {fileID: 760632470765174820}
-  upgradeButtonText: {fileID: 4085191667945105595}
 --- !u!1 &3691249479772113656
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,8 +303,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -75.2, y: -29.3}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -75.9, y: -15.912}
+  m_SizeDelta: {x: 116.3843, y: 32.8249}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4967415590770635270
 CanvasRenderer:
@@ -379,8 +361,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -723,7 +705,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.20644, y: 30.4}
+  m_AnchoredPosition: {x: 68.20644, y: 44}
   m_SizeDelta: {x: 157.2129, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8378459991581950446
