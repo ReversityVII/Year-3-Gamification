@@ -36,7 +36,7 @@ MonoBehaviour:
     _name: Uncommon Character 2
     _icon: {fileID: 0}
     _sprite: {fileID: 2800000, guid: 9ddf0a99da7095e43b6622aeb121e828, type: 3}
-    _unlockChance: 5
+    _unlockChance: 10
     _rarity: 1
     _nodeNumber: 2
     _percentageEarningBoost: 25
@@ -56,7 +56,7 @@ MonoBehaviour:
     _name: Rare Character 1
     _icon: {fileID: 0}
     _sprite: {fileID: 2800000, guid: ee80205b36f8b7d45bf5eeabfc954883, type: 3}
-    _unlockChance: 4
+    _unlockChance: 10
     _rarity: 2
     _nodeNumber: 3
     _percentageEarningBoost: 20
@@ -76,7 +76,7 @@ MonoBehaviour:
     _name: Epic Character 1
     _icon: {fileID: 0}
     _sprite: {fileID: 2800000, guid: b3e2b7466797cea4e935917e8b520ee5, type: 3}
-    _unlockChance: 2
+    _unlockChance: 10
     _rarity: 3
     _nodeNumber: 5
     _percentageEarningBoost: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
     _name: Legendary Character 1
     _icon: {fileID: 0}
     _sprite: {fileID: 2800000, guid: 6805074c3e4695f48a864e4b5e08d5f4, type: 3}
-    _unlockChance: 1
+    _unlockChance: 10
     _rarity: 3
     _nodeNumber: 4
     _percentageEarningBoost: 35
@@ -118,7 +118,7 @@ MonoBehaviour:
     _name: Common Character 1
     _icon: {fileID: 0}
     _sprite: {fileID: 2800000, guid: dde934ac73607494f8013424e0027c55, type: 3}
-    _unlockChance: 100
+    _unlockChance: 0
     _rarity: 0
     _nodeNumber: -1
     _percentageEarningBoost: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
     _name: Common Character 2
     _icon: {fileID: 0}
     _sprite: {fileID: 2800000, guid: 6fceca9bbad47a440b9e454d0c9119f0, type: 3}
-    _unlockChance: 80
+    _unlockChance: 0
     _rarity: 0
     _nodeNumber: -1
     _percentageEarningBoost: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
     _name: Common Character 3
     _icon: {fileID: 0}
     _sprite: {fileID: 2800000, guid: 33cb56fa2d30a3340b96ce50de38298b, type: 3}
-    _unlockChance: 60
+    _unlockChance: 0
     _rarity: 0
     _nodeNumber: -1
     _percentageEarningBoost: 0
@@ -160,7 +160,7 @@ MonoBehaviour:
     _name: Common Character 4
     _icon: {fileID: 0}
     _sprite: {fileID: 2800000, guid: b05f33661f3c10a4796b7e477bf69e89, type: 3}
-    _unlockChance: 40
+    _unlockChance: 0
     _rarity: 0
     _nodeNumber: -1
     _percentageEarningBoost: 0
@@ -174,7 +174,7 @@ MonoBehaviour:
     _name: Common Character 5
     _icon: {fileID: 0}
     _sprite: {fileID: 2800000, guid: dffef66376be4fa480fb02b19edbe903, type: 3}
-    _unlockChance: 20
+    _unlockChance: 0
     _rarity: 0
     _nodeNumber: -1
     _percentageEarningBoost: 0
