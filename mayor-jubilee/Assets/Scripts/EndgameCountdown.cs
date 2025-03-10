@@ -36,7 +36,5 @@ public class EndgameCountdown : MonoBehaviour
         {
             gameObject.GetComponent<TextMeshProUGUI>().color = textColors[0]; //GREEN
         }
-
-
     }
 }

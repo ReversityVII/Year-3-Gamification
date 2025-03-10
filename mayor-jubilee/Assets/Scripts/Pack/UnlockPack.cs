@@ -40,6 +40,9 @@ public class UnlockPack : MonoBehaviour
     //script for characters to influence money production
     private MoneyManagement moneyManagement;
 
+    //count how many packs have been opened
+    private int packsOpened = 0;
+
     public void Start()
     {
         //reference money script and update initial cost
@@ -64,6 +67,9 @@ public class UnlockPack : MonoBehaviour
 
     public void UnlockPackage()
     {
+        //count this as a pack opened
+        packsOpened += 1;
+
         //creates new local list of character chances
         List<CharacterData> characterChances = new List<CharacterData>();
 
@@ -77,8 +83,17 @@ public class UnlockPack : MonoBehaviour
             }
         }
 
-        //picks an random number between 0 and the length of the list
-        int rand = UnityEngine.Random.Range(0, characterChances.Count);
+        int rand;
+        if(packsOpened == 1) //on first pack opening
+        {
+            rand = 1; //pick the first star girl, essentially ignoring the fodder 
+        }
+        else
+        {
+            //picks an random number between 0 and the length of the list
+            rand = UnityEngine.Random.Range(0, characterChances.Count);
+        }
+        
 
         //selects the character from the list based on random value
         chosenChar = characterChances[rand];
