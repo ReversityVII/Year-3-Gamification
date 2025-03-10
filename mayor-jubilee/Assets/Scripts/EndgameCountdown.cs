@@ -24,11 +24,11 @@ public class EndgameCountdown : MonoBehaviour
         gameObject.GetComponent<TextMeshProUGUI>().text = Mathf.RoundToInt(timeInIngameDays) + " DAYS";
 
         //update text color to match general urgency
-        if (timer > totalTimeTilEnd / 4) //<25% of time remaining
+        if (timer > totalTimeTilEnd * 0.75) //>75% of time elapsed
         {
             gameObject.GetComponent<TextMeshProUGUI>().color = textColors[2]; //RED
         }
-        else if (timer > totalTimeTilEnd / 2) //<50% of time remaining
+        else if (timer > totalTimeTilEnd * 0.50) //>50% of time elapsed
         {
             gameObject.GetComponent<TextMeshProUGUI>().color = textColors[1]; //ORANGE
         }
