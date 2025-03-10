@@ -316,6 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScreen: 0
+  happinessSprite: {fileID: 713237487}
   screenReferences:
   - {fileID: 1736099335}
   - {fileID: 1140867663}
@@ -2562,7 +2563,7 @@ GameObject:
   - component: {fileID: 713237489}
   - component: {fileID: 713237490}
   m_Layer: 5
-  m_Name: Square
+  m_Name: TownHappinessSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2575,16 +2576,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713237487}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 114.153656, y: 114.153656, z: 114.153656}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.016473617}
+  m_LocalScale: {x: 114.153755, y: 114.1537, z: 114.1537}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1260320898}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 111, y: -85}
+  m_AnchoredPosition: {x: 110.999756, y: -85.00015}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &713237489
@@ -2625,10 +2626,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2054971885
+  m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2636,7 +2637,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &713237490
@@ -3371,7 +3372,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 29.00631, y: 9.390901, z: 9.390901}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1260320898}
   m_Father: {fileID: 1736099336}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3510,8 +3512,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 510575037}
   m_HandleRect: {fileID: 510575036}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3855,16 +3857,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260320897}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -7.449993}
+  m_LocalScale: {x: 0.03447526, y: 0.10648606, z: 0.10648606}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 713237488}
-  m_Father: {fileID: 1736099336}
+  m_Father: {fileID: 1077096830}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -885, y: -331}
+  m_AnchoredPosition: {x: -28.996887, y: -35.19525}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1260320899
@@ -4482,7 +4484,6 @@ RectTransform:
   m_Children:
   - {fileID: 1077096830}
   - {fileID: 1795085120}
-  - {fileID: 1260320898}
   - {fileID: 954332753}
   - {fileID: 2128130067}
   - {fileID: 1625557654}
