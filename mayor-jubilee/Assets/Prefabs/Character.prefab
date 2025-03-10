@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c068c1dfc4015134487f5970a4605dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  switchScreenScript: {fileID: 0}
 --- !u!61 &424984741852401039
 BoxCollider2D:
   m_ObjectHideFlags: 0

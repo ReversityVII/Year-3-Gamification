@@ -127,7 +127,7 @@ MonoBehaviour:
     _usedsprite: 0
     _packs:
     - Celestial Pack
-    _isHorizontal: 0
+    _isHorizontal: 1
   - identifier: 7
     _name: Common Character 2
     _icon: {fileID: 0}
@@ -141,7 +141,7 @@ MonoBehaviour:
     _usedsprite: 0
     _packs:
     - Celestial Pack
-    _isHorizontal: 0
+    _isHorizontal: 1
   - identifier: 8
     _name: Common Character 3
     _icon: {fileID: 0}
@@ -155,7 +155,7 @@ MonoBehaviour:
     _usedsprite: 0
     _packs:
     - Celestial Pack
-    _isHorizontal: 0
+    _isHorizontal: 1
   - identifier: 9
     _name: Common Character 4
     _icon: {fileID: 0}
@@ -169,7 +169,7 @@ MonoBehaviour:
     _usedsprite: 0
     _packs:
     - Celestial Pack
-    _isHorizontal: 0
+    _isHorizontal: 1
   - identifier: 10
     _name: Common Character 5
     _icon: {fileID: 0}
@@ -183,4 +183,4 @@ MonoBehaviour:
     _usedsprite: 0
     _packs:
     - Celestial Pack
-    _isHorizontal: 0
+    _isHorizontal: 1
