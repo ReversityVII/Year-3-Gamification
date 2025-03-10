@@ -9,6 +9,9 @@ using UnityEngine;
  */
 public class SwitchScreen : MonoBehaviour
 {
+    public enum availableScreens { Town, Gacha }
+    public availableScreens currentScreen;
+
     //reference every screen as a gameobject, use CamelCase (i.e. TownScreen)
     public GameObject[] screenReferences;
 
@@ -26,6 +29,7 @@ public class SwitchScreen : MonoBehaviour
             else
                 screenReferences[i].transform.SetSiblingIndex(0);
         }
+        currentScreen = availableScreens.Town;
     }
 
     //called by navigational buttons when the town screen should be visible
@@ -42,5 +46,7 @@ public class SwitchScreen : MonoBehaviour
             else
                 screenReferences[i].transform.SetSiblingIndex(0);
         }
+
+        currentScreen = availableScreens.Gacha;
     }
 }

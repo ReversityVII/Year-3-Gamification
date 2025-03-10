@@ -10,6 +10,8 @@ public class HoverFlavorText : MonoBehaviour
     private TextMeshProUGUI flavourText;
     private SpriteRenderer backgroundImage;
 
+    public SwitchScreen switchScreenScript;
+
     private bool isHorizontal;
 
     //CharacterData character;
@@ -25,6 +27,8 @@ public class HoverFlavorText : MonoBehaviour
         backgroundImage.enabled = false;
 
         isHorizontal = temp.isHorizontal;
+
+        switchScreenScript = GameObject.FindAnyObjectByType<SwitchScreen>();
     }
 
     private void OnMouseEnter()
@@ -35,8 +39,11 @@ public class HoverFlavorText : MonoBehaviour
         else
             gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(gameObject.GetComponent<RectTransform>().sizeDelta.x * 2f, gameObject.GetComponent<RectTransform>().sizeDelta.y * 2f);
 
-        flavourText.enabled = true;
-        backgroundImage.enabled = true;
+        if(switchScreenScript.currentScreen == SwitchScreen.availableScreens.Gacha) //only do while on gacha screen
+        {
+            flavourText.enabled = true;
+            backgroundImage.enabled = true;
+        }
     }
 
     private void OnMouseExit()
