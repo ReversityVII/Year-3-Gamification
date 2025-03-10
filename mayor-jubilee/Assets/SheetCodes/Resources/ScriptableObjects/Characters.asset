@@ -16,7 +16,7 @@ MonoBehaviour:
   - identifier: 1
     _name: Uncommon Character 1
     _icon: {fileID: 0}
-    _sprite: {fileID: 2800000, guid: 7fdcd2efbb46a114eacce5428f1d88f5, type: 3}
+    _sprite: {fileID: 2800000, guid: f9343105416fbd44d808ba8c7201f868, type: 3}
     _unlockChance: 10
     _rarity: 0
     _nodeNumber: 1
@@ -55,7 +55,7 @@ MonoBehaviour:
   - identifier: 3
     _name: Rare Character 1
     _icon: {fileID: 0}
-    _sprite: {fileID: 2800000, guid: ee80205b36f8b7d45bf5eeabfc954883, type: 3}
+    _sprite: {fileID: 2800000, guid: da1374f69a405a64abb7d744ad910948, type: 3}
     _unlockChance: 8
     _rarity: 2
     _nodeNumber: 3
@@ -96,7 +96,7 @@ MonoBehaviour:
   - identifier: 4
     _name: Legendary Character 1
     _icon: {fileID: 0}
-    _sprite: {fileID: 2800000, guid: 6805074c3e4695f48a864e4b5e08d5f4, type: 3}
+    _sprite: {fileID: 2800000, guid: 2196ece7d36efe341927aab63331a372, type: 3}
     _unlockChance: 5
     _rarity: 3
     _nodeNumber: 4
@@ -117,7 +117,7 @@ MonoBehaviour:
   - identifier: 6
     _name: Common Character 1
     _icon: {fileID: 0}
-    _sprite: {fileID: 2800000, guid: dde934ac73607494f8013424e0027c55, type: 3}
+    _sprite: {fileID: 2800000, guid: 5fa6be4bde5faea49abebd354523a3e7, type: 3}
     _unlockChance: 40
     _rarity: 0
     _nodeNumber: -1
@@ -131,7 +131,7 @@ MonoBehaviour:
   - identifier: 7
     _name: Common Character 2
     _icon: {fileID: 0}
-    _sprite: {fileID: 2800000, guid: 6fceca9bbad47a440b9e454d0c9119f0, type: 3}
+    _sprite: {fileID: 2800000, guid: 74056193ce637e5478add7699897b7c1, type: 3}
     _unlockChance: 40
     _rarity: 0
     _nodeNumber: -1
@@ -145,7 +145,7 @@ MonoBehaviour:
   - identifier: 8
     _name: Common Character 3
     _icon: {fileID: 0}
-    _sprite: {fileID: 2800000, guid: 33cb56fa2d30a3340b96ce50de38298b, type: 3}
+    _sprite: {fileID: 2800000, guid: 4a723ceb99493ac44af727f626a3594c, type: 3}
     _unlockChance: 40
     _rarity: 0
     _nodeNumber: -1
@@ -159,7 +159,7 @@ MonoBehaviour:
   - identifier: 9
     _name: Common Character 4
     _icon: {fileID: 0}
-    _sprite: {fileID: 2800000, guid: b05f33661f3c10a4796b7e477bf69e89, type: 3}
+    _sprite: {fileID: 2800000, guid: cdef790561af423499ac3661c4c1f1e5, type: 3}
     _unlockChance: 40
     _rarity: 0
     _nodeNumber: -1
@@ -173,7 +173,7 @@ MonoBehaviour:
   - identifier: 10
     _name: Common Character 5
     _icon: {fileID: 0}
-    _sprite: {fileID: 2800000, guid: dffef66376be4fa480fb02b19edbe903, type: 3}
+    _sprite: {fileID: 2800000, guid: db9d12808a2acef42ac32d348719e9d4, type: 3}
     _unlockChance: 40
     _rarity: 0
     _nodeNumber: -1
