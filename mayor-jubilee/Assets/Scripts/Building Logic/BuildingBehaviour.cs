@@ -12,6 +12,7 @@ public class BuildingBehaviour : MonoBehaviour
 {
     private BuildingData thisBuildingData;
     private MoneyManagement moneyManagement;
+    private HappinessDisplay happinessDisplay;
 
     //for prefab gameobjects
     public TextMeshProUGUI nameText;
@@ -66,6 +67,8 @@ public class BuildingBehaviour : MonoBehaviour
 
         //prefabs cant reference scene objects so referencing has to be done manually
         moneyManagement = GameObject.FindObjectOfType<MoneyManagement>();
+
+        happinessDisplay = GameObject.FindObjectOfType<HappinessDisplay>();
     }
 
     public void Update()
@@ -118,7 +121,12 @@ public class BuildingBehaviour : MonoBehaviour
 
                 if(fundingMet == true)
                 {
+                    happinessDisplay.changeHappiness(2);
                     fundingMet = false;
+                }
+                else
+                {
+                    happinessDisplay.changeHappiness(-2);
                 }
             }
         }
