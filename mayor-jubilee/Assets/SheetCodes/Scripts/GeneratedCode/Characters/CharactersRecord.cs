@@ -93,6 +93,31 @@ namespace SheetCodes
 		[ColumnName("Is Horizontal")] [SerializeField] private bool _isHorizontal = default;
 		public bool IsHorizontal { get { return _isHorizontal; } set { if(!CheckEdit()) return; _isHorizontal = value; }}
 
+		//Does this type no longer exist? Delete from here..
+		[ColumnName("Associated Background")] [SerializeField] private UnityEngine.Texture _associatedBackground = default;
+		public UnityEngine.Texture AssociatedBackground 
+		{ 
+			get { return _associatedBackground; } 
+            set
+            {
+                if (!CheckEdit())
+                    return;
+#if UNITY_EDITOR
+                if (value != null)
+                {
+                    string assetPath = AssetDatabase.GetAssetPath(value);
+                    if(string.IsNullOrEmpty(assetPath))
+                    {
+                        Debug.LogError("SheetCodes: Reference Objects must be a direct reference from your project folder.");
+                        return;
+                    }
+                }
+                _associatedBackground = value;
+#endif
+            }
+        }
+		//..To here
+
         protected bool runtimeEditingEnabled { get { return originalRecord != null; } }
         public CharactersModel model { get { return ModelManager.CharactersModel; } }
         private CharactersRecord originalRecord = default;
@@ -142,6 +167,7 @@ namespace SheetCodes
             record._usedsprite = _usedsprite;
             record._packs = _packs;
             record._isHorizontal = _isHorizontal;
+            record._associatedBackground = _associatedBackground;
         }
 
         private bool CheckEdit()

@@ -118,8 +118,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 4984011684331374961}
+  background: {fileID: 0}
   flavourText: {fileID: 6934668946507506505}
-  canvas: {fileID: 0}
+  canvas: {fileID: 3924318858711793438}
   XSize: 288
   YSize: 162
 --- !u!1 &4984011684331374961
@@ -259,7 +260,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 86606fb4b41bea04d87e75adc91fbf91, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

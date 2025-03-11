@@ -3,7 +3,11 @@ guid: e88626ff84b0aa24d9e8130cdea765a6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - image: {instanceID: 0}
+  - background: {fileID: 2800000, guid: 86606fb4b41bea04d87e75adc91fbf91, type: 3}
+  - flavourText: {instanceID: 0}
+  - canvas: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
