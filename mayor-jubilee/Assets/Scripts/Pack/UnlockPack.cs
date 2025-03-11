@@ -147,6 +147,7 @@ public class UnlockPack : MonoBehaviour
                 newChar.BuildingSlotAffected = ModelManager.CharactersModel.GetRecord(Indexes[i]).BuildingSlotAffected;
                 newChar.FlavourText = ModelManager.CharactersModel.GetRecord(Indexes[i]).FlavourText;
                 newChar.isHorizontal = ModelManager.CharactersModel.GetRecord(Indexes[i]).IsHorizontal;
+                newChar.backgroundUsed = ModelManager.CharactersModel.GetRecord(Indexes[i]).AssociatedBackground;
                 characters.Add(newChar);
             }
         }

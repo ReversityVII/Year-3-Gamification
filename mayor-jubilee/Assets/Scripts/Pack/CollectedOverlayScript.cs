@@ -9,6 +9,7 @@ public class CollectedOverlayScript : MonoBehaviour
 {
     [SerializeField]
     public GameObject image;
+    public GameObject background;
     public TextMeshProUGUI flavourText;
     public Canvas canvas;
     public float XSize;
@@ -24,6 +25,7 @@ public class CollectedOverlayScript : MonoBehaviour
     {
         CharacterData character = temp;
         image.GetComponent<RawImage>().texture = character.SpriteTexture;
+        background.GetComponent<RawImage>().texture = character.backgroundUsed;
         flavourText.text = character.FlavourText;
 
         if(character.isHorizontal)
