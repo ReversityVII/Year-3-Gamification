@@ -16,7 +16,7 @@ MonoBehaviour:
   - identifier: 1
     _name: Uncommon Character 1
     _icon: {fileID: 0}
-    _sprite: {fileID: 2800000, guid: f9343105416fbd44d808ba8c7201f868, type: 3}
+    _sprite: {fileID: 2800000, guid: 2f9a1f976aae8124ca6b11245d4ab0de, type: 3}
     _unlockChance: 10
     _rarity: 0
     _nodeNumber: 1
@@ -55,7 +55,7 @@ MonoBehaviour:
   - identifier: 3
     _name: Rare Character 1
     _icon: {fileID: 0}
-    _sprite: {fileID: 2800000, guid: da1374f69a405a64abb7d744ad910948, type: 3}
+    _sprite: {fileID: 2800000, guid: 620e7e6d752f3f245941f84ff80d4aab, type: 3}
     _unlockChance: 8
     _rarity: 2
     _nodeNumber: 3
@@ -75,7 +75,7 @@ MonoBehaviour:
   - identifier: 5
     _name: Epic Character 1
     _icon: {fileID: 0}
-    _sprite: {fileID: 2800000, guid: b3e2b7466797cea4e935917e8b520ee5, type: 3}
+    _sprite: {fileID: 2800000, guid: 0c2e8b9ca04e07946affe44793b87c85, type: 3}
     _unlockChance: 6
     _rarity: 3
     _nodeNumber: 5
