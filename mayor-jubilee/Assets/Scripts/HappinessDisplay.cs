@@ -13,8 +13,7 @@ public class HappinessDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        happinessLevel = 10;
-        
+        happinessLevel = 10; 
     }
 
     public void changeHappiness(float value) //increase or decrease
