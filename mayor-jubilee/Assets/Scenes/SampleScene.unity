@@ -504,7 +504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d1c4f0cbfc73ede42a264b2a39e45d75, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6970382
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d1c4f0cbfc73ede42a264b2a39e45d75, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2180,7 +2180,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1029530561}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.45878464
+  m_Size: 0.4587846
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2942,6 +2942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   School: {fileID: 1702992360}
   SchoolV2: {fileID: 158068027}
+  timesCalledSchool: 0
 --- !u!4 &793611856
 Transform:
   m_ObjectHideFlags: 0
@@ -2951,7 +2952,7 @@ Transform:
   m_GameObject: {fileID: 793611854}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52.1368, y: 1.6970382, z: 59.34231}
+  m_LocalPosition: {x: -52.1368, y: 0, z: 59.34231}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3913,8 +3914,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 510575037}
   m_HandleRect: {fileID: 510575036}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.99999976
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4959,7 +4960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ac3054ef709dd9844be00a69990cd76c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6970382
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ac3054ef709dd9844be00a69990cd76c, type: 3}
       propertyPath: m_LocalPosition.z
