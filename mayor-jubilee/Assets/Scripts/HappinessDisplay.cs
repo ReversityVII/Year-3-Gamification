@@ -9,6 +9,7 @@ public class HappinessDisplay : MonoBehaviour
     public float happinessLevel;
     public Sprite[] happinessSprites;
     //public GameObject happinessDisplayObject;
+    public BuildingChanger buildingChanger;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,9 @@ public class HappinessDisplay : MonoBehaviour
         }
         else if (happinessLevel <= 7) //mid happiness
         {
+            //Makes building times happen go up by one. Goes to BuildingChanger script
+            buildingChanger.timesCalledSchool++;
+            
             happinessSpriteChosen = 1;
         }
         else //high happiness
