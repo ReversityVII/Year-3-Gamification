@@ -10,6 +10,16 @@ public class EndgameCountdown : MonoBehaviour
     private float timeInIngameDays;
 
     public Color[] textColors;
+    public GameObject goodEndScreen;
+    public GameObject badEndScreen;
+    public GameObject canvas; //canvas to spawn on
+    private HappinessDisplay happinessDisplay;
+    private bool endReached;
+
+    private void Start()
+    {
+        happinessDisplay = GameObject.FindObjectOfType<HappinessDisplay>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -35,6 +45,20 @@ public class EndgameCountdown : MonoBehaviour
         else
         {
             gameObject.GetComponent<TextMeshProUGUI>().color = textColors[0]; //GREEN
+        }
+
+        if (timer > totalTimeTilEnd && endReached == false)
+        {
+            if(happinessDisplay.happinessLevel <= 5)
+            {
+                GameObject.Instantiate(badEndScreen, canvas.transform);
+                endReached = true;
+            }
+            else
+            {
+                GameObject.Instantiate(goodEndScreen, canvas.transform);
+                endReached= true;
+            }
         }
     }
 }

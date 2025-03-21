@@ -26,7 +26,6 @@ public class HappinessDisplay : MonoBehaviour
     {
         //clamp happiness level between 0-10
         Mathf.Clamp(happinessLevel, 0, 10);
-        print(happinessLevel);
        
     }
 
@@ -34,7 +33,7 @@ public class HappinessDisplay : MonoBehaviour
     {
         int happinessSpriteChosen;
 
-        if (happinessLevel < 3) //low happiness
+        if (happinessLevel <= 5) //low happiness
         {
             happinessSpriteChosen = 0;
         }
