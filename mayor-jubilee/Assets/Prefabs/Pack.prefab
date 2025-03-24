@@ -200,8 +200,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 752909501c1923841b6c1aea7f2af492, type: 2}
+  m_sharedMaterial: {fileID: 8850855438885290490, guid: 752909501c1923841b6c1aea7f2af492, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -321,5 +321,5 @@ MonoBehaviour:
   characterModel: {fileID: 0}
   packText: {fileID: 0}
   baseCost: 0
-  multiplierPerPurchase: 0
+  costIncreasePerPurchase: 0
   figurePrefab: {fileID: 1224546864598732377, guid: 49b39220be7f16f41a9696ad5f4a4916, type: 3}
