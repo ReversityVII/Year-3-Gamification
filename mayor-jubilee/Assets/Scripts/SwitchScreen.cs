@@ -26,7 +26,7 @@ public class SwitchScreen : MonoBehaviour
             {
                 //move the screen lower in hierarchy to make it appear above the others
                 screenReferences[i].transform.SetSiblingIndex(1);
-                happinessSprite.GetComponent<SpriteRenderer>().enabled = true;
+                //happinessSprite.GetComponent<SpriteRenderer>().enabled = true;
             }
                 
             else
@@ -45,7 +45,7 @@ public class SwitchScreen : MonoBehaviour
             {
                 //move the screen lower in hierarchy to make it appear above the others
                 screenReferences[i].transform.SetSiblingIndex(1);
-                happinessSprite.GetComponent<SpriteRenderer>().enabled = false;
+                //happinessSprite.GetComponent<SpriteRenderer>().enabled = false;
             }
 
             else

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HappinessDisplay : MonoBehaviour
 {
@@ -46,7 +47,8 @@ public class HappinessDisplay : MonoBehaviour
             happinessSpriteChosen = 2;
         }
 
-        gameObject.GetComponent<SpriteRenderer>().sprite = happinessSprites[happinessSpriteChosen];
+        //gameObject.GetComponent<SpriteRenderer>().sprite = happinessSprites[happinessSpriteChosen];
+        gameObject.GetComponent<Image>().sprite = happinessSprites[happinessSpriteChosen];
     }
 
 }

@@ -18,11 +18,13 @@ public class ShowHideCanvas : MonoBehaviour
     public void ShowCanvas()
     {
         canvasGroup.alpha = 1;
+        canvasGroup.blocksRaycasts = true;
         canvas.sortingOrder = 1;
     }
     public void HideCanvas()
     {
         canvasGroup.alpha = 0;
+        canvasGroup.blocksRaycasts = false;
         canvas.sortingOrder = 0;
     }
 }
