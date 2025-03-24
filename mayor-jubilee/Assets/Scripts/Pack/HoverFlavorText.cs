@@ -29,6 +29,8 @@ public class HoverFlavorText : MonoBehaviour
         isHorizontal = temp.isHorizontal;
 
         switchScreenScript = GameObject.FindAnyObjectByType<SwitchScreen>();
+
+        Physics2D.queriesHitTriggers = true;
     }
 
     private void OnMouseEnter()
