@@ -39,12 +39,12 @@ public class MoneyManagement : MonoBehaviour
         currentGachaMoney -= amount;
     }
 
-    public void ConvertCurrency(float moneyAmount)
+    public void ConvertCurrency(float moneyToTake, float crystalsToGive)
     {
-        if (moneyAmount < currentMoney)
+        if (moneyToTake <= currentMoney)
         {
-            currentGachaMoney += moneyAmount / 10;
-            RemoveMoney(moneyAmount);
+            currentGachaMoney += crystalsToGive;
+            RemoveMoney(moneyToTake);
         }
     }
 }

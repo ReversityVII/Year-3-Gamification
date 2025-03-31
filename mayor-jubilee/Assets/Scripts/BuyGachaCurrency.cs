@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BuyGachaCurrency : MonoBehaviour
 {
-    public float moneyToConvert; //money taken to convert to gacha currency
+    public float moneyToTake; //money taken to convert to gacha currency
+    public float crystalsToGive;
     public MoneyManagement moneyManagement;
     public GameObject purchaseScreenPrefab;
     public GameObject gachaCanvas;
@@ -17,7 +18,7 @@ public class BuyGachaCurrency : MonoBehaviour
 
     public void CompletePurchase()
     {
-        if(moneyManagement.currentMoney > moneyToConvert)
+        if(moneyManagement.currentMoney > moneyToTake)
         StartCoroutine(test());
     }
 
@@ -28,7 +29,7 @@ public class BuyGachaCurrency : MonoBehaviour
 
         yield return new WaitForSeconds(purchaseScreenPrefab.GetComponent<DestroySelfAfterTime>().timeInSeconds); //wait for the same amount of time as the screen takes to destroy itself
 
-        moneyManagement.ConvertCurrency(moneyToConvert);
+        moneyManagement.ConvertCurrency(moneyToTake, crystalsToGive);
 
         //yield return null;
     }
