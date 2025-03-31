@@ -36,7 +36,7 @@ MonoBehaviour:
   - identifier: 2
     _name: Uncommon Character 2
     _icon: {fileID: 0}
-    _sprite: {fileID: 2800000, guid: 9ddf0a99da7095e43b6622aeb121e828, type: 3}
+    _sprite: {fileID: 2800000, guid: d5cf60e23d251334ea121bc64251d5a3, type: 3}
     _unlockChance: 8
     _rarity: 1
     _nodeNumber: 2
@@ -53,7 +53,7 @@ MonoBehaviour:
     _packs:
     - Celestial Pack
     _isHorizontal: 0
-    _associatedBackground: {fileID: 2800000, guid: 86606fb4b41bea04d87e75adc91fbf91, type: 3}
+    _associatedBackground: {fileID: 2800000, guid: cb2f6b59a69d49744bb62bb74039163c, type: 3}
   - identifier: 3
     _name: Rare Character 1
     _icon: {fileID: 0}
@@ -100,7 +100,7 @@ MonoBehaviour:
   - identifier: 4
     _name: Legendary Character 1
     _icon: {fileID: 0}
-    _sprite: {fileID: 2800000, guid: 2196ece7d36efe341927aab63331a372, type: 3}
+    _sprite: {fileID: 2800000, guid: a97b24a05b1ff1a4a88881aed3eff00a, type: 3}
     _unlockChance: 3
     _rarity: 3
     _nodeNumber: 4
@@ -118,7 +118,7 @@ MonoBehaviour:
     - Celestial Pack
     - LegendPack
     _isHorizontal: 0
-    _associatedBackground: {fileID: 2800000, guid: 86606fb4b41bea04d87e75adc91fbf91, type: 3}
+    _associatedBackground: {fileID: 2800000, guid: 781cf938f6c266c45a31805187060a2d, type: 3}
   - identifier: 6
     _name: Common Character 1
     _icon: {fileID: 0}
@@ -133,7 +133,7 @@ MonoBehaviour:
     _packs:
     - Celestial Pack
     _isHorizontal: 1
-    _associatedBackground: {fileID: 2800000, guid: 86606fb4b41bea04d87e75adc91fbf91, type: 3}
+    _associatedBackground: {fileID: 2800000, guid: 9a61e54b9d1ea944499e94579e1586b9, type: 3}
   - identifier: 7
     _name: Common Character 2
     _icon: {fileID: 0}
@@ -148,7 +148,7 @@ MonoBehaviour:
     _packs:
     - Celestial Pack
     _isHorizontal: 1
-    _associatedBackground: {fileID: 2800000, guid: 86606fb4b41bea04d87e75adc91fbf91, type: 3}
+    _associatedBackground: {fileID: 2800000, guid: 9a61e54b9d1ea944499e94579e1586b9, type: 3}
   - identifier: 8
     _name: Common Character 3
     _icon: {fileID: 0}
@@ -163,7 +163,7 @@ MonoBehaviour:
     _packs:
     - Celestial Pack
     _isHorizontal: 1
-    _associatedBackground: {fileID: 2800000, guid: 86606fb4b41bea04d87e75adc91fbf91, type: 3}
+    _associatedBackground: {fileID: 2800000, guid: 9a61e54b9d1ea944499e94579e1586b9, type: 3}
   - identifier: 9
     _name: Common Character 4
     _icon: {fileID: 0}
@@ -178,7 +178,7 @@ MonoBehaviour:
     _packs:
     - Celestial Pack
     _isHorizontal: 1
-    _associatedBackground: {fileID: 2800000, guid: 86606fb4b41bea04d87e75adc91fbf91, type: 3}
+    _associatedBackground: {fileID: 2800000, guid: 9a61e54b9d1ea944499e94579e1586b9, type: 3}
   - identifier: 10
     _name: Common Character 5
     _icon: {fileID: 0}
@@ -193,4 +193,4 @@ MonoBehaviour:
     _packs:
     - Celestial Pack
     _isHorizontal: 1
-    _associatedBackground: {fileID: 2800000, guid: 86606fb4b41bea04d87e75adc91fbf91, type: 3}
+    _associatedBackground: {fileID: 2800000, guid: 9a61e54b9d1ea944499e94579e1586b9, type: 3}
