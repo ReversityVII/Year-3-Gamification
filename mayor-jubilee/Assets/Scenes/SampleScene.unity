@@ -2322,7 +2322,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1029530562}
   m_HandleRect: {fileID: 1029530561}
   m_Direction: 2
-  m_Value: -0.00000026024824
+  m_Value: 0.00000008674942
   m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4237,8 +4237,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 510575037}
   m_HandleRect: {fileID: 510575036}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 0.9999998
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4333,8 +4333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a2fb60c5d753f488a5ad28b4203a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyToTake: 750
-  crystalsToGive: 75
+  moneyToTake: 5000
+  crystalsToGive: 250
   moneyManagement: {fileID: 0}
   purchaseScreenPrefab: {fileID: 4796875538852523056, guid: d514ddb4af853cb4c9b5edb16426c757, type: 3}
   gachaCanvas: {fileID: 1140867663}
@@ -5436,9 +5436,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Buy 75 Star Crystals
+  m_text: 'Buy 250 Star Crystals
 
-    Cost: 750$'
+    Cost: 5000$'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 752909501c1923841b6c1aea7f2af492, type: 2}
   m_sharedMaterial: {fileID: 8850855438885290490, guid: 752909501c1923841b6c1aea7f2af492, type: 2}
@@ -5819,7 +5819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 703.58014}
+  m_AnchoredPosition: {x: 0, y: 703.57996}
   m_SizeDelta: {x: 0, y: 1300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1795085119
@@ -6484,8 +6484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a2fb60c5d753f488a5ad28b4203a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyToTake: 250
-  crystalsToGive: 25
+  moneyToTake: 1000
+  crystalsToGive: 75
   moneyManagement: {fileID: 0}
   purchaseScreenPrefab: {fileID: 4796875538852523056, guid: d514ddb4af853cb4c9b5edb16426c757, type: 3}
   gachaCanvas: {fileID: 1140867663}
@@ -6780,9 +6780,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Buy 25 Star Crystals
+  m_text: 'Buy 75 Star Crystals
 
-    Cost: 250$'
+    Cost: 1000$'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 752909501c1923841b6c1aea7f2af492, type: 2}
   m_sharedMaterial: {fileID: 8850855438885290490, guid: 752909501c1923841b6c1aea7f2af492, type: 2}
