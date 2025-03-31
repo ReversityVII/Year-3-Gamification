@@ -962,8 +962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a2fb60c5d753f488a5ad28b4203a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyToTake: 0
-  crystalsToGive: 0
+  moneyToTake: 50
+  crystalsToGive: 5
   moneyManagement: {fileID: 0}
   purchaseScreenPrefab: {fileID: 4796875538852523056, guid: d514ddb4af853cb4c9b5edb16426c757, type: 3}
   gachaCanvas: {fileID: 1140867663}
@@ -4333,8 +4333,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a2fb60c5d753f488a5ad28b4203a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyToTake: 0
-  crystalsToGive: 0
+  moneyToTake: 750
+  crystalsToGive: 75
   moneyManagement: {fileID: 0}
   purchaseScreenPrefab: {fileID: 4796875538852523056, guid: d514ddb4af853cb4c9b5edb16426c757, type: 3}
   gachaCanvas: {fileID: 1140867663}
@@ -6484,8 +6484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a2fb60c5d753f488a5ad28b4203a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyToTake: 0
-  crystalsToGive: 0
+  moneyToTake: 250
+  crystalsToGive: 25
   moneyManagement: {fileID: 0}
   purchaseScreenPrefab: {fileID: 4796875538852523056, guid: d514ddb4af853cb4c9b5edb16426c757, type: 3}
   gachaCanvas: {fileID: 1140867663}
@@ -6624,7 +6624,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1e43e48d2ff4d90498ed436f68610a2a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.93
   m_Pitch: 1
   Loop: 0
   Mute: 0
