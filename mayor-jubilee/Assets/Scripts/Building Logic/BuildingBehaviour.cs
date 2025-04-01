@@ -22,6 +22,13 @@ public class BuildingBehaviour : MonoBehaviour
     public GameObject upgradeButton;
     public TextMeshProUGUI upgradeButtonText;
     public GameObject icon;
+    //public GameObject iconV2;
+    //public GameObject iconV1;
+    public Image[] iconImages;
+
+    //public bool midBuilding;
+    //public bool highBuilding;
+    //public bool lowBuilding;
 
     //other building variables needed
     private int level = 0;
@@ -68,6 +75,9 @@ public class BuildingBehaviour : MonoBehaviour
         gameObject.transform.position = new Vector3(positionNode.transform.position.x, positionNode.transform.position.y, 0);
 
         icon.GetComponent<Image>().sprite = buildingData.icon.sprite;
+        iconImages = buildingData.iconImages;
+        //iconV2.GetComponent<Image>().sprite = buildingData.iconV2.sprite;
+        //iconV1.GetComponent<Image>().sprite = buildingData.iconV1.sprite;
 
         //prefabs cant reference scene objects so referencing has to be done manually
         moneyManagement = GameObject.FindObjectOfType<MoneyManagement>();
@@ -106,7 +116,7 @@ public class BuildingBehaviour : MonoBehaviour
         }
         else
         {
-            float fundTime = 5; //minutes the player has for each funding goal
+            float fundTime = 1; //minutes the player has for each funding goal
             specialBuildingTimer += Time.deltaTime;
             moneyPerSecondText.text = "Time: \n" + Mathf.RoundToInt(((fundTime) - specialBuildingTimer / 60)) + " minutes"; //display time remaining in minutes 
             
@@ -134,6 +144,32 @@ public class BuildingBehaviour : MonoBehaviour
                 }
             }
         }
+        if (happinessDisplay.buildingLevel == 0)
+        {
+            icon.GetComponent<Image>().sprite = iconImages[0].sprite;
+            //icon.SetActive(false);
+            //iconV2.SetActive(false);
+            //iconV1.SetActive(true);
+
+            //icon.GetComponent<Image>().sprite = buildingData.icon.sprite = iconV2;
+        }
+
+        if (happinessDisplay.buildingLevel == 1)
+        {
+            icon.GetComponent<Image>().sprite = iconImages[1].sprite;
+            /*icon.SetActive(true);
+            iconV2.SetActive(false);
+            iconV1.SetActive(false);*/
+        }
+
+        if (happinessDisplay.buildingLevel == 2)
+        {
+            icon.GetComponent<Image>().sprite = iconImages[2].sprite;
+            /*icon.SetActive(false);
+            iconV2.SetActive(true);
+            iconV1.SetActive(false);*/
+        }
+
     }
 
     //is called by pressing the prefab's upgrade button

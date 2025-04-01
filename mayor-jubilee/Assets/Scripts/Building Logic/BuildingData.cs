@@ -17,6 +17,8 @@ public class BuildingData
 
     public Image icon;
 
+    public Image[] iconImages;
+
     public float flatEarningRate;
 
     public float earningMultiplierPerLevel;
