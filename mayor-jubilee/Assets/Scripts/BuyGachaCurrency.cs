@@ -18,7 +18,7 @@ public class BuyGachaCurrency : MonoBehaviour
 
     public void CompletePurchase()
     {
-        if(moneyManagement.currentMoney > moneyToTake)
+        if (moneyManagement.currentMoney > moneyToTake)
         StartCoroutine(test());
     }
 

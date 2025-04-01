@@ -14,7 +14,15 @@ public class MoneyManagement : MonoBehaviour
     public float currentGachaMoney = 0;
     public Sprite starCrystalSprite;
     [HideInInspector] public float moneySpent;
+    public AudioClip buySfx;
+    public AudioClip noMoney;
+    AudioSource audioSource;
 
+    public void Start()
+    {
+        //audioSource = GetComponent<AudioSource>();
+        audioSource = FindObjectOfType<AudioSource>();
+    }
     public void Update()
     {
         //update current amount of money held
@@ -32,6 +40,7 @@ public class MoneyManagement : MonoBehaviour
     {
         currentMoney -= amount;
         moneySpent += amount;
+        audioSource.PlayOneShot(buySfx, 1f);
     }
 
     public void RemoveGachaMoney(float amount)
@@ -45,6 +54,12 @@ public class MoneyManagement : MonoBehaviour
         {
             currentGachaMoney += crystalsToGive;
             RemoveMoney(moneyToTake);
+            audioSource.PlayOneShot(buySfx, 1f);
+        }
+
+        else
+        {
+            audioSource.PlayOneShot(noMoney, 1f);
         }
     }
 }

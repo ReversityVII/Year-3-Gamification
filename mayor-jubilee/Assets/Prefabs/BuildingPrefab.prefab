@@ -208,18 +208,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2113144162895734845}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2425039570243342280
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,6 +268,7 @@ MonoBehaviour:
   upgradeButton: {fileID: 760632470765174820}
   upgradeButtonText: {fileID: 4085191667945105595}
   icon: {fileID: 610310994392563085}
+  iconImages: []
   moneyPerSecond: 0
   upgradeCost: 0
   buildingInfluence: 0
