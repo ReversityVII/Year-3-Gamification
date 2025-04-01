@@ -279,6 +279,7 @@ MonoBehaviour:
   moneyPerSecondText: {fileID: 7886700530433506858}
   upgradeButton: {fileID: 760632470765174820}
   upgradeButtonText: {fileID: 4085191667945105595}
+  icon: {fileID: 610310994392563085}
   moneyPerSecond: 0
   upgradeCost: 0
   buildingInfluence: 0

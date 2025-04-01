@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 /*
  * The specific behaviour for each individual building - each building has a copy of this script. 
@@ -20,6 +21,7 @@ public class BuildingBehaviour : MonoBehaviour
     public TextMeshProUGUI moneyPerSecondText;
     public GameObject upgradeButton;
     public TextMeshProUGUI upgradeButtonText;
+    public GameObject icon;
 
     //other building variables needed
     private int level = 0;
@@ -64,6 +66,8 @@ public class BuildingBehaviour : MonoBehaviour
         //make sure scale is correct
         gameObject.transform.localScale = Vector3.one;
         gameObject.transform.position = new Vector3(positionNode.transform.position.x, positionNode.transform.position.y, 0);
+
+        icon.GetComponent<Image>().sprite = buildingData.icon.sprite;
 
         //prefabs cant reference scene objects so referencing has to be done manually
         moneyManagement = GameObject.FindObjectOfType<MoneyManagement>();
