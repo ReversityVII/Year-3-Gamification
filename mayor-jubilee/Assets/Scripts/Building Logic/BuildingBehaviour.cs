@@ -116,7 +116,7 @@ public class BuildingBehaviour : MonoBehaviour
         }
         else
         {
-            float fundTime = 5; //minutes the player has for each funding goal
+            float fundTime = 1; //minutes the player has for each funding goal
             specialBuildingTimer += Time.deltaTime;
             moneyPerSecondText.text = "Time: \n" + Mathf.RoundToInt(((fundTime) - specialBuildingTimer / 60)) + " minutes"; //display time remaining in minutes 
             
@@ -144,30 +144,41 @@ public class BuildingBehaviour : MonoBehaviour
                 }
             }
         }
-        if (happinessDisplay.buildingLevel == 0)
-        {
-            icon.GetComponent<Image>().sprite = iconImages[0].sprite;
-            //icon.SetActive(false);
-            //iconV2.SetActive(false);
-            //iconV1.SetActive(true);
 
-            //icon.GetComponent<Image>().sprite = buildingData.icon.sprite = iconV2;
+        //Checks if building is above level 0 and it isnt the hospital
+        if (level > 0 || isSpecialBuilding == true)
+        {
+            //If low happiness display correct sprite
+            if (happinessDisplay.buildingLevel == 0)
+            {
+                icon.GetComponent<Image>().sprite = iconImages[0].sprite;
+                //icon.SetActive(false);
+                //iconV2.SetActive(false);
+                //iconV1.SetActive(true);
+
+                //icon.GetComponent<Image>().sprite = buildingData.icon.sprite = iconV2;
+            }
+            //If mid happiness display correct sprite
+            if (happinessDisplay.buildingLevel == 1)
+            {
+                icon.GetComponent<Image>().sprite = iconImages[1].sprite;
+                /*icon.SetActive(true);
+                iconV2.SetActive(false);
+                iconV1.SetActive(false);*/
+            }
+            //If high happiness display correct sprite
+            if (happinessDisplay.buildingLevel == 2)
+            {
+                icon.GetComponent<Image>().sprite = iconImages[2].sprite;
+                /*icon.SetActive(false);
+                iconV2.SetActive(true);
+                iconV1.SetActive(false);*/
+            }
         }
-
-        if (happinessDisplay.buildingLevel == 1)
+        //If not above level 0 use the blacked out sprite
+        else
         {
-            icon.GetComponent<Image>().sprite = iconImages[1].sprite;
-            /*icon.SetActive(true);
-            iconV2.SetActive(false);
-            iconV1.SetActive(false);*/
-        }
-
-        if (happinessDisplay.buildingLevel == 2)
-        {
-            icon.GetComponent<Image>().sprite = iconImages[2].sprite;
-            /*icon.SetActive(false);
-            iconV2.SetActive(true);
-            iconV1.SetActive(false);*/
+            icon.GetComponent<Image>().sprite = iconImages[3].sprite;
         }
 
     }
