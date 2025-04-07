@@ -116,7 +116,7 @@ public class BuildingBehaviour : MonoBehaviour
         }
         else
         {
-            float fundTime = 1; //minutes the player has for each funding goal
+            float fundTime = 5; //minutes the player has for each funding goal
             specialBuildingTimer += Time.deltaTime;
             moneyPerSecondText.text = "Time: \n" + Mathf.RoundToInt(((fundTime) - specialBuildingTimer / 60)) + " minutes"; //display time remaining in minutes 
             
